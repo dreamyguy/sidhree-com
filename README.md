@@ -47,19 +47,19 @@ You can get _BrowserSync_ to load your site on several devices. Check [their doc
 
 To make this app **your very own**, you can change some or all of these configs:
 
-:zap: [package.json](https://github.com/dreamyguy/sidhree-com/blob/master/package.json)
+:zap: [package.json](https://github.com/dreamyguy/sidhree-com/blob/master/package.json)  
 The most important config. Leave untouched if you're not familiar with it.
 
-:zap: [gulp/paths.json](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/paths.json)
+:zap: [gulp/paths.json](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/paths.json)  
 Important config that helps you keep crucial paths in one place. Keep intact if you're not changing folder structure.
 
-:zap: [gulp/config-template.json](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/config-template.json)
+:zap: [gulp/config-template.json](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/config-template.json)  
 Important config that helps you keep paths related to `gulp` tasks in one place. Keep intact if you're not changing folder structure.
 
-:zap: [gulp/options/jade.js](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/options/jade.js)
+:zap: [gulp/options/jade.js](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/options/jade.js)  
 Handy for changing information that's compiled along with `jade` (which is done through the _templates_ task). Change values here and tada! :tada:
 
-:zap: [.editorconfig](https://github.com/dreamyguy/sidhree-com/blob/master/.editorconfig)
+:zap: [.editorconfig](https://github.com/dreamyguy/sidhree-com/blob/master/.editorconfig)  
 Just my personal editor's preferences.
 
 ## :star2: License
