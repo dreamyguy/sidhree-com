@@ -62,9 +62,20 @@ Handy for changing information that's compiled along with `jade` (which is done 
 :zap: [.editorconfig](https://github.com/dreamyguy/sidhree-com/blob/master/.editorconfig)  
 Just my personal editor's preferences.
 
+There are some images used as favicons and open-graph resources. You will want to replace those with your own.
+
+:camera: [src/base/favicons/icon.png](https://github.com/dreamyguy/sidhree-com/blob/master/src/base/favicons/icon.png)  
+Change this image with another one of same dimensions and run the task `gulp favicons`. Favicons for various platforms will be generated and their markup will also be updated. Run `gulp` to get the icons and markup to compile into the page (as `gulp-favicons` is not a task included in the default `gulp` task).
+
+:camera: [src/base/img/fluidicon/fluidicon.png](https://github.com/dreamyguy/sidhree-com/blob/master/src/base/img/fluidicon/fluidicon.png)  
+Change this image with another one of same dimensions and run `gulp`. The image will compile to the default `dist/img` folder.
+
+:camera: [src/base/img/og-images](https://github.com/dreamyguy/sidhree-com/blob/master/src/base/img/og-images)  
+Change these images with others of same dimensions and run `gulp`. The images will compile to the default `dist/img` folder. If you change their names you'll need to edit their names on [gulp/options/jade.js](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/options/jade.js) as well.
+
 ## :balloon: Publishing it as your website
 
-You only need to upload the directory `files` and `templates` to the `public_html` folder on your server.
+You only need to upload the directory `dist` and `templates` to the `public_html` folder on your server.
 
 If you have trouble to point your domain to `templates` on your server, just take the content of the `templates` folder and move it to root.
 
