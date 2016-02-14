@@ -6,7 +6,7 @@
 
 I created this project as a way to give back some of what I've learned to the open-source community. It was about time I put up a simple page with my details, so why not share.
 
-## 1. :sparkles: Installing
+## :sparkles: Installing
 
 This project requires you to run `bower install` and `npm install`. It requires [NodeJS][4] to be previously installed in your system.
 
@@ -17,9 +17,9 @@ $ npm install gulp-cli -g
 $ npm install bower -g
 ```
 
-## 2. :horse_racing: Running it
+## :horse_racing: Running it
 
-Once step one is done, you will have to compile the static files and start the server before you can view anything. Run:
+Once installation is complete, you will have to compile the static files and start the server before you can view anything. Run:
 
 ```shell
 $ gulp
@@ -33,7 +33,7 @@ $ gulp serve
 
 ...to start-up the server on `localhost:3000`. You can change the port number on [serve.js](https://github.com/dreamyguy/sidhree-com/blob/master/gulp/tasks/serve.js), but you'll have to check [browser-sync](https://github.com/Browsersync/browser-sync)'s documentation.
 
-## 3. :surfer: Developing
+## :surfer: Developing
 
 Once your server is up and running, you will want to have `gulp` run by itself whenever you make a change. That way you can enjoy the full benefit of [BrowserSync](https://www.browsersync.io/), that will refresh the page automatically for you once you've saved your change. To trigger `gulp` to run when you save changes, open a new terminal window, browse to the project and run:
 
@@ -43,7 +43,7 @@ $ gulp watch
 
 You can get _BrowserSync_ to load your site on several devices. Check [their documentation](https://www.browsersync.io/docs/) out.
 
-## 4. :cupid: Making it your own
+## :cupid: Making it your own
 
 To make this app **your very own**, you can change some or all of these configs:
 
@@ -61,6 +61,16 @@ Handy for changing information that's compiled along with `jade` (which is done 
 
 :zap: [.editorconfig](https://github.com/dreamyguy/sidhree-com/blob/master/.editorconfig)  
 Just my personal editor's preferences.
+
+## :balloon: Publishing it as your website
+
+You only need to upload the directory `files` and `templates` to the `public_html` folder on your server.
+
+If you have trouble to point your domain to `templates` on your server, just take the content of the `templates` folder and move it to root.
+
+At this point `templates` contains only the compiled `html` file **index.html**.
+
+If you do use it I'd love to see it! :thumbsup:
 
 ## :star2: License
 
