@@ -78,11 +78,12 @@ I've never really bothered with licenses, but this time I think there's a lot of
 
 ## :rocket: Release History
 
+ * 2016-02-14   v0.0.3   Updated README file and we're finally ready to take off.
  * 2016-02-14   v0.0.2   The project as it was published on [Sidhree.com][1].
 
 ---
 
-A BIG thanks to the node community and all those who taught me to be a better programer. You know who you are. :blush:
+A BIG thanks to the node community and all those who taught me to be a better programmer. You know who you are. :blush:
 
   [1]: http://sidhree.com
   [2]: http://gulpjs.com/
