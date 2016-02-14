@@ -23,7 +23,7 @@ var jadeOptions = {
     imageFluidIcon: "/dist/img/fluidicon.png",
     twitterCard: "summary_large_image",
     googleSiteVerification: "",
-    googleAnalytics: "",
+    googleAnalytics: "UA-3712583-6",
     repo: "https://github.com/dreamyguy/sidhree-com"
   }
 };
