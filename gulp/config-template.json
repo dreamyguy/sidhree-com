@@ -100,7 +100,8 @@
       "<%= path.src %>modules/**/img/**/*.*",
       "!<%= path.src %>base/img/sprites/**/*.{png,jpg,jpeg}",
       "!<%= path.src %>modules/**/img/sprites/**/*.{png,jpg,jpeg}",
-      "!<%= path.src %>base/img/favicons/favicons.html"
+      "!<%= path.src %>base/img/favicons/favicons.html",
+      "!<%= path.src %>base/img/do-not-compile/*"
     ],
     "dist": "<%= path.dist %>img/",
     "sprites": {
