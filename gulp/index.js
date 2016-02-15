@@ -18,14 +18,15 @@ gulp.task('watch', function(cb) {
            'html-watch',
            'images-watch',
            'templates-watch',
-           'data-watch'
+           'data-watch',
+           'tests-watch'
         ],
         cb);
 });
 
 // run compile only once clean has completed
 gulp.task('compile', ['clean'], function(cb) {
-    return run(['scripts-blocking', 'scripts-async', 'styles', 'fonts', 'html', 'data'],
+    return run(['scripts-blocking', 'scripts-async', 'styles', 'fonts', 'html', 'data', 'tests'],
         'images-minify',
         'inject',
         cb);
