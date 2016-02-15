@@ -2,6 +2,7 @@
 *.sw*
 .sass-cache
 npm-debug.log
+selenium-debug.log
 
 assets/sidhree/
 assets/highlight/
@@ -9,5 +10,6 @@ bower_components/
 components/
 node_modules/
 dist/
+tests/browser_reports/
 templates/
 tmp/
