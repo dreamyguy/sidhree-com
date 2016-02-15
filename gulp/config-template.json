@@ -170,5 +170,14 @@
       "URL": "<%= pkg.author.url %>",
       "logging": true
     }
+  },
+  "tests": {
+    "browser": {
+      "src": [
+        "<%= path.src %>base/tests/browser/*.js", "<%= path.src %>base/tests/browser/**/*.js",
+        "<%= path.src %>modules/**/tests/browser/*.js", "<%= path.src %>modules/**/tests/browser/**/*.js"
+      ],
+      "dist": "<%= path.tests %>browser/"
+    }
   }
 }
