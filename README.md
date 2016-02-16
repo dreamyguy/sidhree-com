@@ -45,6 +45,16 @@ $ gulp watch
 
 You can get _BrowserSync_ to load your site on several devices. Check [their documentation](https://www.browsersync.io/docs/) out.
 
+## :fireworks: Testing
+
+There are a few browser tests designed to automatically test the integrity of the page. To run it, you'd have to have run `gulp` at least once, to compile the test files where [Nightwatchjs][5] expects to find them. Once you're set, run:
+
+```shell
+$ ./bin/nightwatch --test tests/browser/nightwatch.js
+```
+
+Smile!
+
 ## :cupid: Making it your own
 
 To make this app **your very own**, you can change some or all of these configs:
@@ -89,6 +99,7 @@ I've never really bothered with licenses, but this time I think there's a lot of
 
 ## :rocket: Release History
 
+ * 2016-02-15   v0.0.4   Introduced Nightwatch automated browser testing.
  * 2016-02-14   v0.0.3   Updated README file and we're finally ready to take off.
  * 2016-02-14   v0.0.2   The project as it was published on [Sidhree.com][1].
 
@@ -100,3 +111,4 @@ A BIG thanks to the node community and all those who taught me to be a better pr
   [2]: http://gulpjs.com/
   [3]: http://bower.io/
   [4]: http://nodejs.org/
+  [5]: http://nightwatchjs.org/
