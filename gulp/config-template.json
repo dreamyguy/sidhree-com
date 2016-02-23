@@ -23,7 +23,9 @@
       "blocking": {
         "src": [
           "<%= path.src %>base/js/blocking/*.js",
-          "<%= path.src %>modules/**/js/blocking/*.js"
+          "!<%= path.src %>base/js/blocking/*-bkup.js",
+          "<%= path.src %>modules/**/js/blocking/*.js",
+          "!<%= path.src %>modules/**/js/blocking/*-bkup.js"
         ],
         "dist": "<%= pkg.name %>-<%= pkg.version %>.blocking.min.js",
         "vendor": [
@@ -35,8 +37,10 @@
       "async": {
         "src": [
           "<%= path.src %>base/js/**/*.js",
+          "!<%= path.src %>base/js/**/*-bkup.js",
           "!<%= path.src %>base/js/blocking/**",
           "<%= path.src %>modules/**/js/*.js",
+          "!<%= path.src %>modules/**/js/*-bkup.js",
           "!<%= path.src %>modules/**/js/blocking/**"
         ],
         "dist": "<%= pkg.name %>-<%= pkg.version %>.async.min.js",
