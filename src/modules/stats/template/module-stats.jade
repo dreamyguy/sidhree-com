@@ -1,0 +1,15 @@
+section(class=["stats", "bg-fav-beige-dark"])
+  div(class=["content"])
+    .row
+      div(class=["small-12", "columns"])
+        h3(class=["heading-three"]) Git Stats
+        p.gutter-bottom
+          | Below are some interesting stats extracted from the #[span(class="monospace") gitlog] data on repos I contribute to privately (not visible on GitHub). The data is generated with #[a(href="https://github.com/dreamyguy/gitinsight") Gitlog to JSON] and crunched with (parts of) #[a(href="#") Gitinsight] - both being my projects.<br/>
+        h4(class=["heading-four", "centered"]) Impact (Additions + Deletions)
+        .ct-chart-impact
+        h4(class=["heading-four", "centered"]) Cumulative Impact
+        .ct-chart-impact-cumulative
+        h4(class=["heading-four", "centered"]) Commits
+        .ct-chart-commits
+        h4(class=["heading-four", "centered"]) Cumulative Commits
+        .ct-chart-commits-cumulative

@@ -13,8 +13,8 @@
   },
   "data": {
     "src": [
-      "<%= path.src %>base/data/**/*.js",
-      "<%= path.src %>modules/**/data/*.js"
+      "<%= path.src %>base/data/**/*.{js,json}",
+      "<%= path.src %>modules/**/data/*.{js,json}"
     ],
     "dist": "<%= path.dist %>data/"
   },
