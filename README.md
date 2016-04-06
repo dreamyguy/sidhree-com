@@ -99,6 +99,7 @@ I've never really bothered with licenses, but this time I think there's a lot of
 
 ## :rocket: Release History
 
+ * 2016-04-06   v0.0.6   Corrected indentation on layout so that the HTML tag wraps correctly.
  * 2016-02-23   v0.0.5   Introduced 'Git Stats' section. Avoid 'about' image being blocked by adBlockers.
  * 2016-02-15   v0.0.4   Introduced Nightwatch automated browser testing.
  * 2016-02-14   v0.0.3   Updated README file and we're finally ready to take off.
