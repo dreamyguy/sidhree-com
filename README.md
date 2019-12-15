@@ -1,6 +1,8 @@
 # sidhree-com
 
-> Source code for [Sidhree.com][1]. Free to use according to [MIT license](LICENSE).
+> 👨‍💻 ⚡ 🎸 Source code for [Sidhree.com][1]. Free to use according to [MIT license](LICENSE).
+
+[![Build Status](https://travis-ci.org/dreamyguy/sidhree-com.svg?branch=master)](https://travis-ci.org/dreamyguy/sidhree-com) [![MIT Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dreamyguy/sidhree-com/blob/master/LICENSE)
 
 ![Sidhree.com](https://raw.githubusercontent.com/dreamyguy/sidhree-com/master/src/img/do-not-compile/sidhree-com-github.png "Sidhree.com as just after release v0.0.2")
 
@@ -47,8 +49,12 @@ You're free to use it AS IS as long as you stick to the [MIT license](LICENSE). 
  * 2016-02-14   [v0.0.3](https://github.com/dreamyguy/sidhree-com/tree/v0.0.3) Updated README file and we're finally ready to take off.
  * 2016-02-14   [v0.0.2](https://github.com/dreamyguy/sidhree-com/tree/v0.0.2) The project as it was published on [Sidhree.com][1].
 
----
+## License
 
-A BIG thanks to the node community and all those who taught me to be a better programmer. You know who you are.
+[MIT](LICENSE)
 
-  [1]: http://sidhree.com
+# About
+
+**sidhree-com** was put together by [Wallace Sidhrée][1]. 👨‍💻🇳🇴
+
+  [1]: http://sidhree.com/
