@@ -1,16 +1,23 @@
-*.DS_Store
-*.sw*
-.sass-cache
-npm-debug.log
-selenium-debug.log
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-assets/sidhree/
-assets/highlight/
-bower_components/
-components/
-node_modules/
-dist/
-/tests/
-tests/browser_reports/
-templates/
-tmp/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# development mode
+.env.*
+
+# misc
+.DS_Store
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

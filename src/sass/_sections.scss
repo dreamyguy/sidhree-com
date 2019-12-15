@@ -1,0 +1,34 @@
+// about
+.about .section-image {
+    border: rem-calc(5) solid white;
+    background-image: url('/static/img/wallace-sidhree-about.png');
+    background-size: cover;
+    border-radius: 50%;
+    width: rem-calc(200);
+    height: rem-calc(200);
+}
+
+// networks
+.networks {
+  .content {
+      padding: 5px 20px 0;
+  }
+}
+.network-list {
+  @media (min-width: 440px) and (max-width: 640px) {
+      width: 70%;
+  }
+  @media (min-width: 641px) and (max-width: 767px) {
+      width: 50%;
+  }
+  @media (min-width: 768px) and (max-width: 899px) {
+      width: 40%;
+  }
+  @media (min-width: 900px) {
+      width: 344px;
+  }
+  &>li {
+      width: 22%;
+      display: inline-block;
+  }
+}
