@@ -35,9 +35,19 @@
 .pos-relative {
     position: relative;
 }
+.pos-top {
+    position: fixed;
+    top: 0;
+}
 .pos-bottom {
     position: fixed;
     bottom: 0;
+}
+.pos-top-block { // for tricky elements like 'ul'
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
 }
 .pos-bottom-block { // for tricky elements like 'ul'
     position: fixed;
