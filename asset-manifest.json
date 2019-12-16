@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/dreamyguy/sidhree-com/static/css/main.1651007e.chunk.css",
-    "main.js": "/dreamyguy/sidhree-com/static/js/main.dc64d737.chunk.js",
-    "main.js.map": "/dreamyguy/sidhree-com/static/js/main.dc64d737.chunk.js.map",
+    "main.css": "/dreamyguy/sidhree-com/static/css/main.7f38a4a3.chunk.css",
+    "main.js": "/dreamyguy/sidhree-com/static/js/main.d1ad8305.chunk.js",
+    "main.js.map": "/dreamyguy/sidhree-com/static/js/main.d1ad8305.chunk.js.map",
     "runtime-main.js": "/dreamyguy/sidhree-com/static/js/runtime-main.23d82838.js",
     "runtime-main.js.map": "/dreamyguy/sidhree-com/static/js/runtime-main.23d82838.js.map",
     "static/js/2.dfa1502e.chunk.js": "/dreamyguy/sidhree-com/static/js/2.dfa1502e.chunk.js",
     "static/js/2.dfa1502e.chunk.js.map": "/dreamyguy/sidhree-com/static/js/2.dfa1502e.chunk.js.map",
     "index.html": "/dreamyguy/sidhree-com/index.html",
-    "precache-manifest.de9b72f10b42794c75109a0e66139a02.js": "/dreamyguy/sidhree-com/precache-manifest.de9b72f10b42794c75109a0e66139a02.js",
+    "precache-manifest.0aa02db91a16622f995baad3f1148255.js": "/dreamyguy/sidhree-com/precache-manifest.0aa02db91a16622f995baad3f1148255.js",
     "service-worker.js": "/dreamyguy/sidhree-com/service-worker.js",
-    "static/css/main.1651007e.chunk.css.map": "/dreamyguy/sidhree-com/static/css/main.1651007e.chunk.css.map",
+    "static/css/main.7f38a4a3.chunk.css.map": "/dreamyguy/sidhree-com/static/css/main.7f38a4a3.chunk.css.map",
     "static/js/2.dfa1502e.chunk.js.LICENSE": "/dreamyguy/sidhree-com/static/js/2.dfa1502e.chunk.js.LICENSE",
     "static/media/App.scss": "/dreamyguy/sidhree-com/static/media/icons0.0.7.efb279ab.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.23d82838.js",
     "static/js/2.dfa1502e.chunk.js",
-    "static/css/main.1651007e.chunk.css",
-    "static/js/main.dc64d737.chunk.js"
+    "static/css/main.7f38a4a3.chunk.css",
+    "static/js/main.d1ad8305.chunk.js"
   ]
 }

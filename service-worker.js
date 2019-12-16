@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dreamyguy/sidhree-com/precache-manifest.de9b72f10b42794c75109a0e66139a02.js"
+  "/dreamyguy/sidhree-com/precache-manifest.0aa02db91a16622f995baad3f1148255.js"
 );
 
 self.addEventListener('message', (event) => {
