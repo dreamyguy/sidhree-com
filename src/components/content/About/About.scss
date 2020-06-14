@@ -1,8 +1,8 @@
-@import "./../../sass/foundation";
+@import "./../../../sass/foundation";
 
 .about .section-image {
   border: rem-calc(5) solid white;
-  background-image: url('/static/img/wallace-sidhree-about.png');
+  background-image: url("/static/img/wallace-sidhree-about.png");
   background-size: cover;
   border-radius: 50%;
   width: rem-calc(200);
