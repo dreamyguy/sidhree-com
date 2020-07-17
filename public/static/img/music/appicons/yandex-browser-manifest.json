@@ -1,0 +1,9 @@
+{
+  "version": "0.0.8",
+  "api_version": 1,
+  "layout": {
+    "logo": "/static/img/music/appicons/yandex-browser-50x50.png",
+    "color": "transparent",
+    "show_title": true
+  }
+}

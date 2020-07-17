@@ -1,0 +1,170 @@
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite($sprite, $display: block) {
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.sprite {
+  background-image: url('../img/sprite.png');
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    background-image: url('../img/sprite@2x.png');
+    background-size: 502px 396px;
+  }
+  &.sprite-badge_amazon {
+    $sprite-badge_amazon: -(415px + 2), -(0px + 2), (88px - 4), (44px - 4);
+    @include sprite($sprite-badge_amazon);
+  }
+  &.sprite-badge_bandcamp {
+    $sprite-badge_bandcamp: -(296px + 2), -(220px + 2), (114px - 4), (44px - 4);
+    @include sprite($sprite-badge_bandcamp);
+  }
+  &.sprite-badge_google-play-music {
+    $sprite-badge_google-play-music: -(114px + 2), -(264px + 2), (113px - 4), (44px - 4);
+    @include sprite($sprite-badge_google-play-music);
+  }
+  &.sprite-badge_itunes {
+    $sprite-badge_itunes: -(296px + 2), -(132px + 2), (114px - 4), (44px - 4);
+    @include sprite($sprite-badge_itunes);
+  }
+  &.sprite-badge_spotify {
+    $sprite-badge_spotify: -(0px + 2), -(264px + 2), (114px - 4), (44px - 4);
+    @include sprite($sprite-badge_spotify);
+  }
+  &.sprite-badge_tidal {
+    $sprite-badge_tidal: -(296px + 2), -(176px + 2), (114px - 4), (44px - 4);
+    @include sprite($sprite-badge_tidal);
+  }
+  &.sprite-music-service_247 {
+    $sprite-music-service_247: -(415px + 2), -(176px + 2), (72px - 4), (44px - 4);
+    @include sprite($sprite-music-service_247);
+  }
+  &.sprite-music-service_7digital {
+    $sprite-music-service_7digital: -(0px + 2), -(220px + 2), (128px - 4), (44px - 4);
+    @include sprite($sprite-music-service_7digital);
+  }
+  &.sprite-music-service_8tracks {
+    $sprite-music-service_8tracks: -(140px + 2), -(132px + 2), (136px - 4), (44px - 4);
+    @include sprite($sprite-music-service_8tracks);
+  }
+  &.sprite-music-service_akazoo {
+    $sprite-music-service_akazoo: -(0px + 2), -(132px + 2), (140px - 4), (44px - 4);
+    @include sprite($sprite-music-service_akazoo);
+  }
+  &.sprite-music-service_awa {
+    $sprite-music-service_awa: -(415px + 2), -(88px + 2), (75px - 4), (44px - 4);
+    @include sprite($sprite-music-service_awa);
+  }
+  &.sprite-music-service_cdbaby {
+    $sprite-music-service_cdbaby: -(223px + 2), -(308px + 2), (107px - 4), (44px - 4);
+    @include sprite($sprite-music-service_cdbaby);
+  }
+  &.sprite-music-service_deezer {
+    $sprite-music-service_deezer: -(296px + 2), -(0px + 2), (119px - 4), (44px - 4);
+    @include sprite($sprite-music-service_deezer);
+  }
+  &.sprite-music-service_emusic {
+    $sprite-music-service_emusic: -(154px + 2), -(88px + 2), (140px - 4), (44px - 4);
+    @include sprite($sprite-music-service_emusic);
+  }
+  &.sprite-music-service_great-indie-music {
+    $sprite-music-service_great-indie-music: -(0px + 2), -(176px + 2), (133px - 4), (44px - 4);
+    @include sprite($sprite-music-service_great-indie-music);
+  }
+  &.sprite-music-service_groove {
+    $sprite-music-service_groove: -(415px + 2), -(220px + 2), (43px - 4), (44px - 4);
+    @include sprite($sprite-music-service_groove);
+  }
+  &.sprite-music-service_iheart-radio {
+    $sprite-music-service_iheart-radio: -(458px + 2), -(220px + 2), (35px - 4), (44px - 4);
+    @include sprite($sprite-music-service_iheart-radio);
+  }
+  &.sprite-music-service_imusica {
+    $sprite-music-service_imusica: -(0px + 2), -(0px + 2), (154px - 4), (44px - 4);
+    @include sprite($sprite-music-service_imusica);
+  }
+  &.sprite-music-service_inprodicon {
+    $sprite-music-service_inprodicon: -(128px + 2), -(220px + 2), (119px - 4), (44px - 4);
+    @include sprite($sprite-music-service_inprodicon);
+  }
+  &.sprite-music-service_jaxsta {
+    $sprite-music-service_jaxsta: -(415px + 2), -(44px + 2), (86px - 4), (44px - 4);
+    @include sprite($sprite-music-service_jaxsta);
+  }
+  &.sprite-music-service_kdigital {
+    $sprite-music-service_kdigital: -(296px + 2), -(88px + 2), (117px - 4), (44px - 4);
+    @include sprite($sprite-music-service_kdigital);
+  }
+  &.sprite-music-service_kkbox {
+    $sprite-music-service_kkbox: -(0px + 2), -(352px + 2), (106px - 4), (44px - 4);
+    @include sprite($sprite-music-service_kkbox);
+  }
+  &.sprite-music-service_kuack {
+    $sprite-music-service_kuack: -(211px + 2), -(352px + 2), (104px - 4), (44px - 4);
+    @include sprite($sprite-music-service_kuack);
+  }
+  &.sprite-music-service_line-music {
+    $sprite-music-service_line-music: -(0px + 2), -(44px + 2), (154px - 4), (44px - 4);
+    @include sprite($sprite-music-service_line-music);
+  }
+  &.sprite-music-service_medianet {
+    $sprite-music-service_medianet: -(296px + 2), -(44px + 2), (119px - 4), (44px - 4);
+    @include sprite($sprite-music-service_medianet);
+  }
+  &.sprite-music-service_napster {
+    $sprite-music-service_napster: -(0px + 2), -(88px + 2), (147px - 4), (44px - 4);
+    @include sprite($sprite-music-service_napster);
+  }
+  &.sprite-music-service_pandora {
+    $sprite-music-service_pandora: -(133px + 2), -(176px + 2), (129px - 4), (44px - 4);
+    @include sprite($sprite-music-service_pandora);
+  }
+  &.sprite-music-service_rumblefish {
+    $sprite-music-service_rumblefish: -(154px + 2), -(44px + 2), (140px - 4), (44px - 4);
+    @include sprite($sprite-music-service_rumblefish);
+  }
+  &.sprite-music-service_saavn {
+    $sprite-music-service_saavn: -(227px + 2), -(264px + 2), (113px - 4), (44px - 4);
+    @include sprite($sprite-music-service_saavn);
+  }
+  &.sprite-music-service_shazam {
+    $sprite-music-service_shazam: -(154px + 2), -(0px + 2), (142px - 4), (44px - 4);
+    @include sprite($sprite-music-service_shazam);
+  }
+  &.sprite-music-service_slacker-radio {
+    $sprite-music-service_slacker-radio: -(106px + 2), -(352px + 2), (105px - 4), (44px - 4);
+    @include sprite($sprite-music-service_slacker-radio);
+  }
+  &.sprite-music-service_sound-exchange {
+    $sprite-music-service_sound-exchange: -(0px + 2), -(308px + 2), (113px - 4), (44px - 4);
+    @include sprite($sprite-music-service_sound-exchange);
+  }
+  &.sprite-music-service_tradebit {
+    $sprite-music-service_tradebit: -(113px + 2), -(308px + 2), (111px - 4), (44px - 4);
+    @include sprite($sprite-music-service_tradebit);
+  }
+  &.sprite-music-service_yandex {
+    $sprite-music-service_yandex: -(415px + 2), -(132px + 2), (75px - 4), (44px - 4);
+    @include sprite($sprite-music-service_yandex);
+  }
+  &.sprite-music-service_youtube {
+    $sprite-music-service_youtube: -(315px + 2), -(352px + 2), (94px - 4), (44px - 4);
+    @include sprite($sprite-music-service_youtube);
+  }
+}

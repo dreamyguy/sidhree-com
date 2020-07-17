@@ -1,19 +1,19 @@
 import React from "react";
-import About from "../content/About/About";
-import Network from "../content/Network/Network";
+import DevAbout from "../content/Dev/DevAbout";
+import DevNetwork from "../content/Dev/DevNetwork";
 import Section from "../layout/Section/Section";
 import Wrapper from "../layout/Wrapper/Wrapper";
 
 const NotFoundPage = () => (
   <Wrapper>
     <Section sectionClasses="about" contentClasses="text-shadow-light">
-      <About />
+      <DevAbout />
     </Section>
     <Section
       sectionClasses="networks bg-fav-occre-dark fg-fav-beige-light"
       contentClasses="align-center"
     >
-      <Network />
+      <DevNetwork />
     </Section>
     <Section sectionClasses="nice-to-know" contentClasses="align-center">
       <b>

@@ -3,9 +3,21 @@
 @font-face {
   font-family: "icons0.0.7";
   src: url('#{$path-fonts}/icons/icons0.0.7.eot');
-  src: url('#{$path-fonts}/icons/icons0.0.7.eot?#iefix') format("eot"), url('#{$path-fonts}/icons/icons0.0.7.woff') format("woff"), url('#{$path-fonts}/icons/icons0.0.7.ttf') format("truetype");
+  src: url('#{$path-fonts}/icons/icons0.0.7.eot?#iefix') format("eot"),
+       url('#{$path-fonts}/icons/icons0.0.7.woff') format("woff"),
+       url('#{$path-fonts}/icons/icons0.0.7.ttf') format("truetype");
   font-weight: 400;
   font-style: normal
+}
+
+@font-face {
+  font-family: "icons0.0.11";
+  src: url('#{$path-fonts}/icons/icons0.0.11.eot');
+  src: url('#{$path-fonts}/icons/icons0.0.11.eot?#iefix') format('eot'),
+       url('#{$path-fonts}/icons/icons0.0.11.woff') format('woff'),
+       url('#{$path-fonts}/icons/icons0.0.11.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .icon:before {
@@ -19,6 +31,12 @@
   font-weight: 400;
   text-transform: none;
   line-height: inherit
+}
+
+.music {
+  .icon:before {
+    font-family: "icons0.0.11";
+  }
 }
 
 .icon-lg {
@@ -48,130 +66,41 @@
   text-align: center
 }
 
-.icon-fa-code-fork:before {
-  content: "\EA01"
-}
+.icon-fa-code-fork:before { content: "\EA01" }
+.icon-fa-code:before { content: "\EA02" }
+.icon-fa-codepen:before { content: "\EA03" }
+.icon-fa-css3:before { content: "\EA04" }
+.icon-fa-facebook-f:before { content: "\EA05" }
+.icon-fa-facebook-official:before { content: "\EA06" }
+.icon-fa-facebook-square:before { content: "\EA07" }
+.icon-fa-facebook:before { content: "\EA08" }
+.icon-fa-file-code-o:before { content: "\EA09" }
+.icon-fa-git-square:before { content: "\EA0A" }
+.icon-fa-git:before { content: "\EA0B" }
+.icon-fa-github-alt:before { content: "\EA0C" }
+.icon-fa-github-square:before { content: "\EA0D" }
+.icon-fa-github:before { content: "\EA0E" }
+.icon-fa-gittip:before { content: "\EA0F" }
+.icon-fa-google-plus-square:before { content: "\EA10" }
+.icon-fa-google-plus:before { content: "\EA11" }
+.icon-fa-html5:before { content: "\EA12" }
+.icon-fa-lastfm-square:before { content: "\EA13" }
+.icon-fa-lastfm:before { content: "\EA14" }
+.icon-fa-linkedin-square:before { content: "\EA15" }
+.icon-fa-linkedin:before { content: "\EA16" }
+.icon-fa-pinterest-p:before { content: "\EA17" }
+.icon-fa-pinterest-square:before { content: "\EA18" }
+.icon-fa-pinterest:before { content: "\EA19" }
+.icon-fa-stack-overflow:before { content: "\EA1A" }
+.icon-fa-twitch:before { content: "\EA1B" }
+.icon-fa-twitter-square:before { content: "\EA1C" }
+.icon-fa-twitter:before { content: "\EA1D" }
+.icon-fa-wordpress:before { content: "\EA1E" }
+.icon-fa-cogs:before { content: "\EA9F" }
+.icon-fa-flask:before { content: "\EB03" }
 
-.icon-fa-code:before {
-  content: "\EA02"
-}
-
-.icon-fa-codepen:before {
-  content: "\EA03"
-}
-
-.icon-fa-css3:before {
-  content: "\EA04"
-}
-
-.icon-fa-facebook-f:before {
-  content: "\EA05"
-}
-
-.icon-fa-facebook-official:before {
-  content: "\EA06"
-}
-
-.icon-fa-facebook-square:before {
-  content: "\EA07"
-}
-
-.icon-fa-facebook:before {
-  content: "\EA08"
-}
-
-.icon-fa-file-code-o:before {
-  content: "\EA09"
-}
-
-.icon-fa-git-square:before {
-  content: "\EA0A"
-}
-
-.icon-fa-git:before {
-  content: "\EA0B"
-}
-
-.icon-fa-github-alt:before {
-  content: "\EA0C"
-}
-
-.icon-fa-github-square:before {
-  content: "\EA0D"
-}
-
-.icon-fa-github:before {
-  content: "\EA0E"
-}
-
-.icon-fa-gittip:before {
-  content: "\EA0F"
-}
-
-.icon-fa-google-plus-square:before {
-  content: "\EA10"
-}
-
-.icon-fa-google-plus:before {
-  content: "\EA11"
-}
-
-.icon-fa-html5:before {
-  content: "\EA12"
-}
-
-.icon-fa-lastfm-square:before {
-  content: "\EA13"
-}
-
-.icon-fa-lastfm:before {
-  content: "\EA14"
-}
-
-.icon-fa-linkedin-square:before {
-  content: "\EA15"
-}
-
-.icon-fa-linkedin:before {
-  content: "\EA16"
-}
-
-.icon-fa-pinterest-p:before {
-  content: "\EA17"
-}
-
-.icon-fa-pinterest-square:before {
-  content: "\EA18"
-}
-
-.icon-fa-pinterest:before {
-  content: "\EA19"
-}
-
-.icon-fa-stack-overflow:before {
-  content: "\EA1A"
-}
-
-.icon-fa-twitch:before {
-  content: "\EA1B"
-}
-
-.icon-fa-twitter-square:before {
-  content: "\EA1C"
-}
-
-.icon-fa-twitter:before {
-  content: "\EA1D"
-}
-
-.icon-fa-wordpress:before {
-  content: "\EA1E"
-}
-
-.icon-fa-cogs:before {
-  content: "\EA9F"
-}
-
-.icon-fa-flask:before {
-  content: "\EB03"
-}
+.icon-fa-amazon:before { content: "\EA08" }
+.icon-fa-apple:before { content: "\EA15" }
+.icon-fa-instagram:before { content: "\EB59" }
+.icon-fa-music:before { content: "\EBA8" }
+.icon-fa-spotify:before { content: "\EC30" }

@@ -1,5 +1,11 @@
 @import "variables";
 
+.heading-one {
+    line-height: 1.3;
+    margin-bottom: 15px;
+    font-size: 30px;
+    @media (max-width: 767px) { font-size: 26px; }
+}
 .heading-two {
     line-height: 28px;
     margin-bottom: 15px;
@@ -25,6 +31,9 @@
     margin-bottom: 6px;
     font-size: 16px;
     @media (max-width: 767px) { font-size: 14px; }
+}
+.italic {
+    font-style: italic;
 }
 .rounded {
     border-radius: 100%;
@@ -88,6 +97,18 @@
 .text-shadow-light {
     text-shadow: 0 1px 1px $cl-white;
 }
+.display-inline {
+    display: inline;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.list-inline li {
+    display: inline;
+}
+.list-inline-block li {
+    display: inline-block;
+}
 
 // position mixin
 
@@ -108,8 +129,31 @@ $_positions:  top,
     }
     .no-margin-#{nth($_pos, 1)} {
         margin-#{nth($_pos, 1)}: 0;
+    }    .padding-#{nth($_pos, 1)} {
+        padding-#{nth($_pos, 1)}: $gutter-size;
+    }
+    .padding-#{nth($_pos, 1)}-half {
+        padding-#{nth($_pos, 1)}: $gutter-size/2;
+    }
+    .padding-#{nth($_pos, 1)}-double {
+        padding-#{nth($_pos, 1)}: $gutter-size*2;
+    }
+    .no-padding-#{nth($_pos, 1)} {
+        padding-#{nth($_pos, 1)}: 0;
     }
 }
+
+$_float:  left,
+          right;
+@each $_pos in $_float {
+    .gutter-#{nth($_pos, 1)} {
+        float: #{nth($_pos, 1)};
+    }
+}
+.float-none {
+  float: none;
+}
+
 .no-margins {
     margin: 0;
 }

@@ -27,7 +27,7 @@ $include-html-global-classes: $include-html-classes;
 // b. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$row-width: rem-calc(580);
+$row-width: rem-calc(768);
 $total-columns: 12;
 $column-gutter: $gutter-size;
 
@@ -67,4 +67,3 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max
 
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
-

@@ -1,0 +1,147 @@
+@import "./../../../sass/foundation";
+@import "./../../../sass/foundation-settings";
+@import "./../../../sass/variables";
+
+.music {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/bkg-dark-wood.jpg');
+  line-height: 1.8;
+  a {
+    color: $cl-sb-graylighter;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &visited {
+      color: $cl-sb-graylighter;
+      text-decoration: none;
+    }
+  }
+
+  .content {
+    max-width: 1234px;
+    margin: 0 auto;
+    padding: 20px 0;
+    @media (min-width: 385px) {
+      padding: 20px;
+    }
+    position: relative;
+  }
+  
+  .image-left {
+    float: left;
+    margin-right: $gutter-size;
+  }
+  .image-right {
+    float: right;
+    margin-left: $gutter-size;
+  }
+  
+  .about {
+    background-image: url('../../../img/bkg-gradient.png');
+    background-repeat: repeat-x;
+    li {
+      margin-right: 2px;
+      @media (min-width: 385px) {
+        margin-right: 20px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .icon-fa-facebook-f {
+      font-size: 40px;
+      position: relative;
+      top: -4px;
+    }
+    .icon-fa-amazon {
+      font-size: 40px;
+      position: relative;
+      top: -2px;
+    }
+  
+    .section-image {
+      border: rem-calc(2) solid $cl-blackest;
+      background-color: $cl-blackest;
+      background-size: cover;
+      border-radius: 50%;
+      width: rem-calc(280);
+      height: rem-calc(280);
+      @media (min-width: 385px) {
+        width: rem-calc(320);
+        height: rem-calc(320);
+      }
+    }
+    .content {
+      padding-bottom: 0;
+    }
+  }
+  
+  .bio {
+    .image-left,
+    .image-right {
+      width: 100%;
+      margin-bottom: $gutter-size;
+      @media (min-width: 480px) {
+        width: 30%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .image-description {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    background-color: $cl-black;
+  }
+  
+  .separator {
+    margin: rem-calc(60) auto;
+    max-width: rem-calc(900);
+    // &.flute {}
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .album-meta-art img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .music-badges li,
+  .music-icons li {
+    font-size: rem-calc(12);
+    // color: $cl-sb-gray;
+    text-align: center;
+    p {
+      margin-top: rem-calc(5);
+    }
+    &::last-child {
+      margin-right: 0;
+    }
+  }
+  .music-badges li {
+    margin-bottom: rem-calc(10);
+    margin-right: rem-calc(10);
+  }
+  .music-icons li {
+    margin-bottom: rem-calc(25);
+    margin-right: rem-calc(30);
+  }
+  
+  .hide-at-666-up {
+    @media (min-width: 666px) {
+      display: none;
+    }
+  }
+  .show-at-666-up {
+    display: none;
+    @media (min-width: 666px) {
+      display: block;
+    }
+  }
+}

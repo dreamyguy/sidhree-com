@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import App from "./components/hoc/App";
 import HomePage from "./components/pages/HomePage";
+import SongPage from "./components/pages/SongPage";
 import NotFoundPage from "./components/pages/NotFoundPage";
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
     <App>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/progressive-rock/futures-past/" component={SongPage} />
         <Route exact path="/404" component={NotFoundPage} />
       </Switch>
     </App>

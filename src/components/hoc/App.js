@@ -16,7 +16,7 @@ const reducer = (prevState, updatedProperty) => ({
 
 const App = ({ children }) => {
   const [state, setState] = useReducer(reducer, initialState);
-  const userReposApi = "https://api.github.com/users/dreamyguy/repos";
+  const userReposApi = "https://api.github.com/users/dreamyguy/repos?per_page=100";
   const userBioApi = "https://api.github.com/users/dreamyguy";
 
   useEffect(() => {
