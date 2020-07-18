@@ -12,8 +12,36 @@ import MusicSingle from "./MusicSingle";
 import Section from "../../layout/Section/Section";
 import './Music.scss';
 
+const soMeLinks = [
+  {
+    url: 'https://itun.es/no/2n_Xib',
+    service: 'iTunes',
+    badge: 'apple',
+  },
+  {
+    url: 'https://instagram.com/sidhree',
+    service: 'Instagram',
+    badge: 'instagram',
+  },
+  {
+    url: 'https://www.facebook.com/sidhree',
+    service: 'Facebook',
+    badge: 'facebook-f',
+  },
+  {
+    url: 'https://www.twitter.com/sidhree',
+    service: 'Twitter',
+    badge: 'twitter',
+  },
+  {
+    url: 'https://www.amazon.com/s/ref=ntt_srch_drd_B06XXS8G9J?ie=UTF8&amp;field-keywords=Wallace%20Sidhrée&amp;index=digital-music',
+    service: 'Amazon',
+    badge: 'amazon',
+  },
+];
+
 const single = {
-  author: 'Wallace Sidhrée',
+  artistName: 'Wallace Sidhrée',
   byComposed: 'Wallace Sidhrée',
   byMastered: 'Joshua Carney',
   byMixed: 'Joshua Carney',
@@ -24,12 +52,13 @@ const single = {
   // isAlbum: true, // organsm
   isrc: 'NOW6M1777777',
   label: 'Mëllon Records',
-  name: 'Futures Past',
+  songName: 'Futures Past',
   releaseDate: '5th April 2017',
-  spotifyTrack: '42WaYYO17qAoYyyYhwrCGj',
   spotifyAlbum: '102vu2A0fZ7gcxSpB0Iwef',
-  // spotifyTrack: '0LhHyREYRFnWGPjgaAWnOf', // organsm
+  spotifyArtist: '0EiGue54P0MDdLnwCZ1nQp',
+  spotifyTrack: '42WaYYO17qAoYyyYhwrCGj',
   // spotifyAlbum: '45B5EHRo8X7RYuRuWUge5z', // organsm
+  // spotifyTrack: '0LhHyREYRFnWGPjgaAWnOf', // organsm
   // spotifyAlbumHeight: '173', // organsm
   upc: '191061543961',
 };
@@ -273,16 +302,21 @@ const Music = ({ withBio }) => (
   <>
     {renderHead()}
     <Section sectionClasses="about" contentClasses="text-shadow-dark">
-      <MusicAbout />
+      <MusicAbout
+        artistName={single.artistName}
+        role={pageDetails.role}
+        soMeLinks={soMeLinks}
+        spotifyArtist={single.spotifyArtist}
+      />
     </Section>
     <Section sectionClasses="album">
       <MusicSingle single={single} />
     </Section>
     <Section sectionClasses="spotify">
       <MusicBadgesListenTo
-        authorName={single.author}
+        artistName={single.artistName}
         listenToBadges={listenToBadges}
-        singleName={single.name}
+        singleName={single.songName}
       />
     </Section>
     <Section sectionClasses="article">
@@ -295,9 +329,9 @@ const Music = ({ withBio }) => (
     <MusicSeparator />
     <Section sectionClasses="listen-bottom">
       <MusicBadgesListenMore
-        authorName={single.author}
+        artistName={single.artistName}
         otherServices={otherServices}
-        singleName={single.name}
+        singleName={single.songName}
       />
     </Section>
     <MusicSeparator />

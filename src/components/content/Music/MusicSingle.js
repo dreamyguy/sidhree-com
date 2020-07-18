@@ -118,7 +118,7 @@ const renderCredits = ({
 
 const MusicSingle = ({ single }) => {
   const {
-    author,
+    artistName,
     byComposed,
     byMastered,
     byMixed,
@@ -129,7 +129,7 @@ const MusicSingle = ({ single }) => {
     isAlbum = false,
     isrc,
     label,
-    name,
+    songName,
     releaseDate,
     spotifyTrack,
     spotifyAlbum,
@@ -140,11 +140,11 @@ const MusicSingle = ({ single }) => {
     <>
       <div className="row album-meta">
         <div className="small-12 medium-5 columns">
-          <div className="album-meta-art gutter-bottom"><img src={imgWallaceSidhreeFuturesPastSml} title={`${author} - ${name}`} alt={`${author} - ${name} [Album Cover]`}/></div>
+          <div className="album-meta-art gutter-bottom"><img src={imgWallaceSidhreeFuturesPastSml} title={`${artistName} - ${songName}`} alt={`${artistName} - ${songName} [Album Cover]`}/></div>
         </div>
         <div className="small-12 medium-7 columns">
           <div className="album-meta-details">
-            <p><span className="open-sans-semibold">{name}</span> <span className="fg-sb-gray">[Single]</span></p>
+            <p><span className="open-sans-semibold">{songName}</span> <span className="fg-sb-gray">[Single]</span></p>
             <p><span className="open-sans-semibold fg-sb-gray">Label:</span> {label}</p>
             <p className="show-at-666-up"><span className="open-sans-semibold fg-sb-gray">ISRC:</span> {isrc} | <span className="open-sans-semibold fg-sb-gray">UPC:</span> {upc}</p>
             <p className="hide-at-666-up"><span className="open-sans-semibold fg-sb-gray">ISRC:</span> {isrc}</p>
