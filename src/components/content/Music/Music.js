@@ -256,6 +256,19 @@ const pageDetails = {
   imageHeight: "1200",
 };
 
+const article = {
+  articleDate: '2017.04.03',
+  articleHeading: `Wallace Sidhrée to release his debut into the Progressive Rock scene, with the single 'Futures Past'`,
+  articleSubheading: 'OFFICIAL PRESS RELEASE',
+  articleBody: `
+    <p class="gutter-bottom">Wallace Sidhrée is a Progressive Rock oriented multi-instrumentalist. With his haunting B3 &amp; bass tones alongside loaded guitar solos, Wallace invites us to reflect upon futures that passed us by - futures that never were and will never be.</p>
+    <p class="gutter-bottom">The whole track was either played (flute, guitars, bass &amp; keyboard) or programmed (drums &amp; sampled voice) at his tiny little studio in his (our) own flat in Oslo, Norway. The track is heavily influenced by Italian Progressive Rock, which is deeply rooted on distorted organs, melodic solos and spellbound vocals (PFM, Il Paese Dei Balocchi, Museo Rosenbach). Certain passages can sound a lot like Camel and even Yes. There's certainly a tinge of Scandinavian Prog, which is usually recognized by its weight and depth.</p>
+    <p class="gutter-bottom">This single is a prelude to an upcoming full album, which Wallace is committed to deliver by the end of 2017. It is a result of an incredible effort by a single person; one that composed, recorded, produced and published a single and plans to pull-off a full-length album within the same year. It might not happen since he must reconcile his musicianship with having a full-time job as a programmer, being a husband (/my husband) and caring for a furry cute-overload Golden Retriever - but his ambition intrigues me and makes me want to listen to the tale he has to tell.</p>
+    <p class="gutter-bottom">When asked if he'd tour to promote his single, Wallace replies that he's fully committed to the recording &amp; production of his album. He also sneers and says " - it will be interesting to go out there, you know, touring. Playing all instruments at the same time will be... tricky.". That would be a 'no', for now, but he said he will be working around that challenge.</p>
+    <p class="open-sans-light-italic">— Fatima Sidhrée</p>
+  `
+};
+
 const renderHead = () => {
   const {
     name,
@@ -320,7 +333,12 @@ const Music = ({ withBio }) => (
       />
     </Section>
     <Section sectionClasses="article">
-      <MusicArticle />
+      <MusicArticle
+        articleBody={article.articleBody}
+        articleDate={article.articleDate}
+        articleHeading={article.articleHeading}
+        articleSubheading={article.articleSubheading}
+      />
     </Section>
     <MusicSeparator />
     <Section sectionClasses="contact">
