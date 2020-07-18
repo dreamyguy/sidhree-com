@@ -67,6 +67,154 @@ const listenToBadges = [
   },
 ];
 
+const otherServices = [
+  {
+    url: '',
+    service: '7digital',
+    badge: '7digital',
+  },
+  {
+    url: '',
+    service: '8tracks',
+    badge: '8tracks',
+  },
+  {
+    url: '',
+    service: '247',
+    badge: '247',
+  },
+  {
+    url: '',
+    service: 'akazoo',
+    badge: 'akazoo',
+  },
+  {
+    url: '',
+    service: 'awa',
+    badge: 'awa',
+  },
+  {
+    url: 'https://www.cdbaby.com/cd/wallacesidhree',
+    service: 'CD Baby',
+    badge: 'cdbaby',
+  },
+  {
+    url: 'http://www.deezer.com/album/15810634',
+    service: 'Deezer',
+    badge: 'deezer',
+  },
+  {
+    url: '',
+    service: 'EMusic',
+    badge: 'emusic',
+  },
+  {
+    url: '',
+    service: 'Great Indie Music',
+    badge: 'great-indie-music',
+  },
+  {
+    url: '',
+    service: 'Groove',
+    badge: 'groove',
+  },
+  {
+    url: '',
+    service: 'iHeart Radio',
+    badge: 'iheart-radio',
+  },
+  {
+    url: '',
+    service: 'iMusica',
+    badge: 'imusica',
+  },
+  {
+    url: '',
+    service: 'Inprodicon',
+    badge: 'inprodicon',
+  },
+  {
+    url: '',
+    service: 'Jaxsta',
+    badge: 'jaxsta',
+  },
+  {
+    url: '',
+    service: 'KDigital',
+    badge: 'kdigital',
+  },
+  {
+    url: '',
+    service: 'KKBox',
+    badge: 'kkbox',
+  },
+  {
+    url: '',
+    service: 'Kuack',
+    badge: 'kuack',
+  },
+  {
+    url: '',
+    service: 'Line Music',
+    badge: 'line-music',
+  },
+  {
+    url: '',
+    service: 'Medianet',
+    badge: 'medianet',
+  },
+  {
+    url: 'http://no.napster.com/artist/wallace-sidhree',
+    service: 'Napster',
+    badge: 'napster',
+  },
+  {
+    url: '',
+    service: 'Pandora',
+    badge: 'pandora',
+  },
+  {
+    url: '',
+    service: 'Rumblefish',
+    badge: 'rumblefish',
+  },
+  {
+    url: 'http://www.saavn.com/s/artist/wallace-sidhree-artist/3tozGP,JaRw_',
+    service: 'Saavn',
+    badge: 'saavn',
+  },
+  {
+    url: 'https://www.shazam.com/artist/203845684/wallace-sidhre%CC%81e',
+    service: 'Shazam',
+    badge: 'shazam',
+  },
+  {
+    url: 'http://www.slacker.com/artist/wallace-sidhree',
+    service: 'Slacker Radio',
+    badge: 'slacker-radio',
+  },
+  {
+    url: '',
+    service: 'Sound Exchange',
+    badge: 'sound-exchange',
+  },
+  {
+    url: '',
+    service: 'Tradebit',
+    badge: 'tradebit',
+  },
+  {
+    url: '',
+    service: 'Yandex',
+    badge: 'yandex',
+  },
+  {
+    url: '',
+    service: 'YouTube',
+    badge: 'youtube',
+  },
+];
+
 const pageDetails = {
   name: "Wallace Sidhrée",
   role: "Progressive Rock Artist",
@@ -146,7 +294,11 @@ const Music = ({ withBio }) => (
     </Section>
     <MusicSeparator />
     <Section sectionClasses="listen-bottom">
-      <MusicBadgesListenMore />
+      <MusicBadgesListenMore
+        authorName={single.author}
+        otherServices={otherServices}
+        singleName={single.name}
+      />
     </Section>
     <MusicSeparator />
     {withBio &&

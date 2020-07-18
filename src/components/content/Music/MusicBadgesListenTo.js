@@ -19,7 +19,7 @@ const renderBadges = ({ authorName, listenToBadges, singleName }) => {
     return output;
   }
   return null;
-}
+};
 
 const MusicBadgesListenTo = ({ authorName, listenToBadges, singleName }) => {
   return (
