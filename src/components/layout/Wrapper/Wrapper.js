@@ -1,6 +1,6 @@
 import React from "react";
 import Bar from "../Bar/Bar";
-import Copyright from "../../content/Copyright/Copyright";
+import Copyright from "../Copyright/Copyright";
 import Section from "../Section/Section";
 
 const classesDark = "open-sans-light bg-brown-sugar text-shadow-dark fg-sb-graylight";
