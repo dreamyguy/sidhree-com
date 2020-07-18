@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Helmet } from "react-helmet";
 import MusicAbout from "./MusicAbout";
 import MusicArticle from "./MusicArticle";
@@ -20,11 +21,16 @@ const single = {
   byProduced: 'Wallace Sidhrée',
   contactEmail: 'w@sidhree.com',
   contactPhone: '+47 40481863',
+  // isAlbum: true, // organsm
   isrc: 'NOW6M1777777',
   label: 'Mëllon Records',
   name: 'Futures Past',
   releaseDate: '5th April 2017',
   spotifyTrack: '42WaYYO17qAoYyyYhwrCGj',
+  spotifyAlbum: '102vu2A0fZ7gcxSpB0Iwef',
+  // spotifyTrack: '0LhHyREYRFnWGPjgaAWnOf', // organsm
+  // spotifyAlbum: '45B5EHRo8X7RYuRuWUge5z', // organsm
+  // spotifyAlbumHeight: '173', // organsm
   upc: '191061543961',
 };
 
@@ -82,7 +88,7 @@ const renderHead = () => {
   )
 };
 
-const Music = () => (
+const Music = ({ withBio }) => (
   <>
     {renderHead()}
     <Section sectionClasses="about" contentClasses="text-shadow-dark">
@@ -106,10 +112,16 @@ const Music = () => (
       <MusicBadgesListenMore />
     </Section>
     <MusicSeparator />
-    <Section sectionClasses="bio">
-      <MusicBio />
-    </Section>
+    {withBio &&
+      <Section sectionClasses="bio">
+        <MusicBio />
+      </Section>
+    }
   </>
 );
+
+Music.propTypes = {
+  withBio: PropTypes.bool,
+};
 
 export default Music;

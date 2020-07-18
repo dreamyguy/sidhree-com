@@ -12,7 +12,13 @@ ReactDOM.render(
     <App>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/progressive-rock/futures-past/" component={SongPage} />
+        <Route exact path="/progressive-rock/futures-past/" render={(props) => <SongPage {...props} withBio />} />
+        <Route exact path="/piano-solo/transformation/" component={SongPage} />
+        <Route exact path="/piano-solo/homecoming/" component={SongPage} />
+        <Route exact path="/piano-solo/remembrance/" component={SongPage} />
+        <Route exact path="/piano-solo/discovery/" component={SongPage} />
+        <Route exact path="/piano-solo/resolution/" component={SongPage} />
+        <Route exact path="/hard-jazz/organsm/" component={SongPage} />
         <Route exact path="/404" component={NotFoundPage} />
       </Switch>
     </App>

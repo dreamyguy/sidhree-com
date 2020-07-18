@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Helmet } from "react-helmet";
 import Music from "../content/Music/Music";
 import Wrapper from "../layout/Wrapper/Wrapper";
@@ -175,11 +176,15 @@ const renderHead = () => {
   )
 };
 
-const SongPage = () => (
+const SongPage = ({ withBio }) => (
   <Wrapper isMusic>
     {renderHead()}
-    <Music />
+    <Music withBio={withBio} />
   </Wrapper>
 );
+
+SongPage.propTypes = {
+  withBio: PropTypes.bool,
+};
 
 export default SongPage;
