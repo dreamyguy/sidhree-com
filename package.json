@@ -37,7 +37,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
     "gh-pages": "^3.0.0"

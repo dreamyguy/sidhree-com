@@ -34,6 +34,39 @@ const single = {
   upc: '191061543961',
 };
 
+const listenToBadges = [
+  {
+    url: 'https://itun.es/no/Zn_Xib?i=1221063545',
+    service: 'Apple iTunes',
+    badge: 'itunes',
+  },
+  {
+    url: 'https://play.google.com/music/m/Tkx3uymxh6p4x2ebtxua7zcjvma?t=Futures_Past_-_Wallace_Sidhree',
+    service: 'Google Play Music',
+    badge: 'google-play-music',
+  },
+  {
+    url: 'https://open.spotify.com/track/42WaYYO17qAoYyyYhwrCGj',
+    service: 'Spotify',
+    badge: 'spotify',
+  },
+  {
+    url: 'http://sidhree.bandcamp.com/track/futures-past',
+    service: 'Bandcamp',
+    badge: 'bandcamp',
+  },
+  {
+    url: 'https://tidal.com/track/72191707',
+    service: 'Tidal',
+    badge: 'tidal',
+  },
+  {
+    url: 'https://www.amazon.com/Futures-Past-Wallace-Sidhr%C3%A9e/dp/B06XXS9635/',
+    service: 'Amazon',
+    badge: 'amazon',
+  },
+];
+
 const pageDetails = {
   name: "Wallace Sidhrée",
   role: "Progressive Rock Artist",
@@ -98,7 +131,11 @@ const Music = ({ withBio }) => (
       <MusicSingle single={single} />
     </Section>
     <Section sectionClasses="spotify">
-      <MusicBadgesListenTo />
+      <MusicBadgesListenTo
+        authorName={single.author}
+        listenToBadges={listenToBadges}
+        singleName={single.name}
+      />
     </Section>
     <Section sectionClasses="article">
       <MusicArticle />
