@@ -91,7 +91,7 @@ const musicDefaultPageDetails = {
   twitterImage: "/static/img/music/og-images/twitter.png",
 };
 
-const musicPageDetails = { ...devPageDetails, musicDefaultPageDetails };
+const musicPageDetails = { ...devPageDetails, ...musicDefaultPageDetails };
 
 const soMeLinks = [
   {
