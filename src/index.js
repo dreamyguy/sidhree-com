@@ -13,12 +13,12 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/progressive-rock/futures-past/" render={(props) => <SongPage {...props} withBio />} />
-        <Route exact path="/piano-solo/transformation/" component={SongPage} />
-        <Route exact path="/piano-solo/homecoming/" component={SongPage} />
-        <Route exact path="/piano-solo/remembrance/" component={SongPage} />
-        <Route exact path="/piano-solo/discovery/" component={SongPage} />
-        <Route exact path="/piano-solo/resolution/" component={SongPage} />
-        <Route exact path="/hard-jazz/organsm/" component={SongPage} />
+        <Route exact path="/piano-solo/transformation/" render={(props) => <SongPage {...props} release="transformation" />} />
+        <Route exact path="/piano-solo/homecoming/" render={(props) => <SongPage {...props} release="homecoming" />} />
+        <Route exact path="/piano-solo/remembrance/" render={(props) => <SongPage {...props} release="remembrance" />} />
+        <Route exact path="/piano-solo/discovery/" render={(props) => <SongPage {...props} release="discovery" />} />
+        <Route exact path="/piano-solo/resolution/" render={(props) => <SongPage {...props} release="resolution" />} />
+        <Route exact path="/hard-jazz/organsm/" render={(props) => <SongPage {...props} release="organsm" />} />
         <Route exact path="/404" component={NotFoundPage} />
       </Switch>
     </App>

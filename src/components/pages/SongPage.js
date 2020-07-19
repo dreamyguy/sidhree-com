@@ -5,14 +5,15 @@ import Music from "../content/Music/Music";
 import Wrapper from "../layout/Wrapper/Wrapper";
 import { musicPageDetails } from './../../data';
 
-const SongPage = ({ withBio }) => (
+const SongPage = ({ release, withBio }) => (
   <Wrapper isMusic>
     <Head pageDetails={musicPageDetails} />
-    <Music withBio={withBio} />
+    <Music release={release} withBio={withBio} />
   </Wrapper>
 );
 
 SongPage.propTypes = {
+  release: PropTypes.string,
   withBio: PropTypes.bool,
 };
 
