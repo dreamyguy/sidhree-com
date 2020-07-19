@@ -18,6 +18,7 @@ ReactDOM.render(
         <Route exact path="/piano-solo/remembrance/" render={(props) => <SongPage {...props} release="remembrance" />} />
         <Route exact path="/piano-solo/discovery/" render={(props) => <SongPage {...props} release="discovery" />} />
         <Route exact path="/piano-solo/resolution/" render={(props) => <SongPage {...props} release="resolution" />} />
+        <Route exact path="/piano-solo/golden-days/" render={(props) => <SongPage {...props} release="golden-days" />} />
         <Route exact path="/hard-jazz/organsm/" render={(props) => <SongPage {...props} release="organsm" />} />
         <Route exact path="/404" component={NotFoundPage} />
       </Switch>

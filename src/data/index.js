@@ -130,6 +130,7 @@ const single = {
   byProduced: 'Wallace Sidhrée',
   contactEmail: 'w@sidhree.com',
   contactPhone: '+47 40481863',
+  image: "/static/img/music/release/Wallace-Sidhree---Futures Past---Progressive-Rock---640.jpg",
   isAlbum: false,
   isrc: 'NOW6M1777777',
   label: 'Mëllon Records',

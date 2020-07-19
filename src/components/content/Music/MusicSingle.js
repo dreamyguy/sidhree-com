@@ -1,5 +1,4 @@
 import React from 'react';
-import imgWallaceSidhreeFuturesPastSml from './../../../img/wallace-sidhree_futures-past-sml.jpg';
 import './MusicSingle.scss';
 
 const renderCredits = ({
@@ -126,6 +125,7 @@ const MusicSingle = ({ single }) => {
     byProduced,
     contactEmail,
     contactPhone,
+    image = '',
     isAlbum = false,
     isrc,
     label,
@@ -140,14 +140,18 @@ const MusicSingle = ({ single }) => {
     <>
       <div className="row album-meta">
         <div className="small-12 medium-5 columns">
-          <div className="album-meta-art gutter-bottom"><img src={imgWallaceSidhreeFuturesPastSml} title={`${artistName} - ${songName}`} alt={`${artistName} - ${songName} [Album Cover]`}/></div>
+          <div className="album-meta-art gutter-bottom">
+            {image &&
+              <img src={process.env.PUBLIC_URL + image} title={`${artistName} - ${songName}`} alt={`${artistName} - ${songName} [Album Cover]`}/>
+            }
+          </div>
         </div>
         <div className="small-12 medium-7 columns">
           <div className="album-meta-details">
-            <p><span className="open-sans-semibold">{songName}</span> <span className="fg-sb-gray">[Single]</span></p>
+          <p><span className="open-sans-semibold">{songName}</span> <span className="fg-sb-gray">{isAlbum ? '[EP]' : '[Single]'}</span></p>
             <p><span className="open-sans-semibold fg-sb-gray">Label:</span> {label}</p>
-            <p className="show-at-666-up"><span className="open-sans-semibold fg-sb-gray">ISRC:</span> {isrc} | <span className="open-sans-semibold fg-sb-gray">UPC:</span> {upc}</p>
-            <p className="hide-at-666-up"><span className="open-sans-semibold fg-sb-gray">ISRC:</span> {isrc}</p>
+            <p className="show-at-666-up">{isrc && <><span className="open-sans-semibold fg-sb-gray">ISRC:</span> {isrc} | </>}<span className="open-sans-semibold fg-sb-gray">UPC:</span> {upc}</p>
+            {isrc && <p className="hide-at-666-up"><span className="open-sans-semibold fg-sb-gray">ISRC:</span> {isrc}</p>}
             <p className="hide-at-666-up"><span className="open-sans-semibold fg-sb-gray">UPC:</span> {upc}</p>
             {renderCredits({
               byComposed,
