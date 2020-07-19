@@ -130,7 +130,7 @@ const single = {
   byProduced: 'Wallace Sidhrée',
   contactEmail: 'w@sidhree.com',
   contactPhone: '+47 40481863',
-  // isAlbum: true, // organsm
+  isAlbum: false,
   isrc: 'NOW6M1777777',
   label: 'Mëllon Records',
   songName: 'Futures Past',
@@ -138,9 +138,6 @@ const single = {
   spotifyAlbum: '102vu2A0fZ7gcxSpB0Iwef',
   spotifyArtist: '0EiGue54P0MDdLnwCZ1nQp',
   spotifyTrack: '42WaYYO17qAoYyyYhwrCGj',
-  // spotifyAlbum: '45B5EHRo8X7RYuRuWUge5z', // organsm
-  // spotifyTrack: '0LhHyREYRFnWGPjgaAWnOf', // organsm
-  // spotifyAlbumHeight: '173', // organsm
   upc: '191061543961',
 };
 

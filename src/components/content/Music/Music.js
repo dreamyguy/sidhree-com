@@ -10,7 +10,7 @@ import MusicContact from "./MusicContact";
 import MusicSeparator from "./MusicSeparator";
 import MusicSingle from "./MusicSingle";
 import Section from "../../layout/Section/Section";
-import { getSongDetails } from "../../../data/getData";
+import { getReleaseDetails, getSongPageDetails } from "../../../data/getData";
 import {
   article,
   listenToBadges,
@@ -22,27 +22,28 @@ import {
 import './Music.scss';
 
 const Music = ({ release, withBio }) => {
-  const mergedPageDetails = { ...musicPageDetails, ...getSongDetails(release) };
+  const mergedPageDetails = { ...musicPageDetails, ...getSongPageDetails(release) };
+  const mergedReleaseDetails = { ...single, ...getReleaseDetails(release) };
 
   return (
     <>
       <Head pageDetails={mergedPageDetails} />
       <Section sectionClasses="about" contentClasses="text-shadow-dark">
         <MusicAbout
-          artistName={single.artistName}
+          artistName={mergedReleaseDetails.artistName}
           role={mergedPageDetails.role}
           soMeLinks={soMeLinks}
-          spotifyArtist={single.spotifyArtist}
+          spotifyArtist={mergedReleaseDetails.spotifyArtist}
         />
       </Section>
       <Section sectionClasses="album">
-        <MusicSingle single={single} />
+        <MusicSingle single={mergedReleaseDetails} />
       </Section>
       <Section sectionClasses="spotify">
         <MusicBadgesListenTo
-          artistName={single.artistName}
+          artistName={mergedReleaseDetails.artistName}
           listenToBadges={listenToBadges}
-          singleName={single.songName}
+          singleName={mergedReleaseDetails.songName}
         />
       </Section>
       <Section sectionClasses="article">
@@ -60,9 +61,9 @@ const Music = ({ release, withBio }) => {
       <MusicSeparator />
       <Section sectionClasses="listen-bottom">
         <MusicBadgesListenMore
-          artistName={single.artistName}
+          artistName={mergedReleaseDetails.artistName}
           otherServices={otherServices}
-          singleName={single.songName}
+          singleName={mergedReleaseDetails.songName}
         />
       </Section>
       <MusicSeparator />
