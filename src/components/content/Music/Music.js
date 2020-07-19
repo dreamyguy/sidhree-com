@@ -128,7 +128,7 @@ const otherServices = [
     badge: 'cdbaby',
   },
   {
-    url: 'http://www.deezer.com/album/15810634',
+    url: 'https://www.deezer.com/us/artist/12224378',
     service: 'Deezer',
     badge: 'deezer',
   },
