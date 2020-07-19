@@ -37,7 +37,7 @@ const MusicAbout = ({ artistName, role, soMeLinks, spotifyArtist }) => {
           </li>
           {renderSoMe({ artistName, soMeLinks })}
           <li>
-            <iframe src={`https://open.spotify.com/follow/1/?uri=spotify:artist:${spotifyArtist}&size=detail&theme=dark&show-count=0`} width="180" height="56" scrolling="no" frameborder="0" style={{ border: 'none', overflow: 'hidden', margin: '0 auto'}} allowtransparency="true" title="spotify artist follow button" />
+            <iframe src={`https://open.spotify.com/follow/1/?uri=spotify:artist:${spotifyArtist}&size=detail&theme=dark&show-count=0`} width="180" height="56" scrolling="no" frameBorder="0" style={{ border: 'none', overflow: 'hidden', margin: '0 auto'}} allowtransparency="true" title="spotify artist follow button" />
           </li>
         </ul>
       </div>

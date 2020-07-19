@@ -159,7 +159,7 @@ const MusicSingle = ({ single }) => {
             <p><span className="open-sans-semibold fg-sb-gray">Contact:</span> <span className="email"><a href={`mailto:${contactEmail}`}>{contactEmail}</a></span> | {contactPhone}</p>
             <p className="open-sans-semibold-italic fg-sb-gray italic">Released on the <span className="fg-sb-graylight">{releaseDate}</span>:</p>
             {!isAlbum &&
-              <iframe src={`https://open.spotify.com/embed/track/${spotifyTrack}`} width="100%" height="80" frameborder="0" allowtransparency="true" className="gutter-top" title="spotify player" allow="encrypted-media" />
+              <iframe src={`https://open.spotify.com/embed/track/${spotifyTrack}`} width="100%" height="80" frameBorder="0" allowtransparency="true" className="gutter-top" title="spotify player" allow="encrypted-media" />
             }
           </div>
         </div>
