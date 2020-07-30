@@ -104,3 +104,35 @@
 .icon-fa-instagram:before { content: "\EB59" }
 .icon-fa-music:before { content: "\EBA8" }
 .icon-fa-spotify:before { content: "\EC30" }
+
+// --- SVGs ---
+// TODO: Eventually move all icons from fonts to SVGs
+.icon-svg {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 120%;
+
+  &.icon-2x {
+    height: 1.2em;
+    width: 1.1em;
+  }
+
+  &.icon-3x {
+    height: 1.3em;
+    width: 1.2em;
+  }
+
+  &.icon-4x {
+    height: 1.4em;
+    width: 1.3em;
+  }
+
+  &.icon-5x {
+    height: 1.5em;
+    width: 1.4em;
+  }
+
+  &.icon-fa-youtube {
+    background-image: url('./../img/icons/fontawesome/fa-youtube-cl-sb-graylighter.svg');
+  }
+}

@@ -7,6 +7,8 @@
 // Wallace-Sidhree---Golden-Days.jpg
 // Wallace-Sidhree---Organsm---Hard-Jazz.jpg
 
+import { listenToBadges } from './index';
+
 export const getSongPageDetails = release => {
   let songPageDetails = '';
   if (release === 'transformation') {
@@ -194,4 +196,314 @@ export const getReleaseDetails = release => {
     };
   }
   return releaseDetails;
+};
+
+export const getListenToDetails = release => {
+  let listenToDetails = [];
+  if (release === 'transformation') {
+    listenToDetails = [
+      {
+        url: 'https://music.apple.com/no/album/transformation-single/1476617288',
+        service: 'Apple Music',
+        badge: 'itunes',
+      },
+      {
+        url: 'https://play.google.com/music/preview/B4bktfsrp24jy7nzdkoihfwltcq',
+        service: 'Google Play Music',
+        badge: 'google-play-music',
+      },
+      {
+        url: 'https://open.spotify.com/track/2P7f4mz5sdeXjtSWfNiYay',
+        service: 'Spotify',
+        badge: 'spotify',
+      },
+      {
+        url: 'https://sidhree.bandcamp.com/track/transformation-piano-solo',
+        service: 'Bandcamp',
+        badge: 'bandcamp',
+      },
+      {
+        url: 'https://tidal.com/browse/track/114511282',
+        service: 'Tidal',
+        badge: 'tidal',
+      },
+      {
+        url: 'https://music.youtube.com/watch?v=tH-h5FWJ9sA',
+        service: 'Youtube Music',
+        badge: 'youtube',
+      },
+      {
+        url: 'https://www.deezer.com/us/album/105891422',
+        service: 'Deezer',
+        badge: 'deezer',
+      },
+      {
+        url: 'https://www.amazon.com/Transformation-Wallace-Sidhr%C3%A9e/dp/B07VXRVCP7/',
+        service: 'Amazon',
+        badge: 'amazon',
+      },
+    ];
+  } else if (release === 'homecoming') {
+    listenToDetails = [
+      {
+        url: 'https://music.apple.com/no/album/homecoming-single/1478447196',
+        service: 'Apple Music',
+        badge: 'itunes',
+      },
+      {
+        url: 'https://play.google.com/music/preview/Bzjsecyz3cwq2wpcw4gsxiblvze',
+        service: 'Google Play Music',
+        badge: 'google-play-music',
+      },
+      {
+        url: 'https://open.spotify.com/track/58LvenhIyyNiSuDgMpE1Sl',
+        service: 'Spotify',
+        badge: 'spotify',
+      },
+      {
+        url: 'https://sidhree.bandcamp.com/track/homecoming',
+        service: 'Bandcamp',
+        badge: 'bandcamp',
+      },
+      {
+        url: 'https://tidal.com/browse/track/116128713',
+        service: 'Tidal',
+        badge: 'tidal',
+      },
+      {
+        url: 'https://music.youtube.com/watch?v=y1rSLsPysQw',
+        service: 'Youtube Music',
+        badge: 'youtube',
+      },
+      {
+        url: 'https://www.deezer.com/us/album/108445422',
+        service: 'Deezer',
+        badge: 'deezer',
+      },
+      {
+        url: 'https://www.amazon.com/Homecoming-Wallace-Sidhr%C3%A9e/dp/B07WP6NKPB/',
+        service: 'Amazon',
+        badge: 'amazon',
+      },
+    ];
+  } else if (release === 'remembrance') {
+    listenToDetails = [
+      {
+        url: 'https://music.apple.com/no/album/remembrance-single/1479919853',
+        service: 'Apple Music',
+        badge: 'itunes',
+      },
+      {
+        url: 'https://play.google.com/music/preview/Bngbi2kvrqnx3munysou5hv7nha',
+        service: 'Google Play Music',
+        badge: 'google-play-music',
+      },
+      {
+        url: 'https://open.spotify.com/track/2CgIfbApZQRcEWcLJwEGiO',
+        service: 'Spotify',
+        badge: 'spotify',
+      },
+      {
+        url: 'https://sidhree.bandcamp.com/track/remembrance',
+        service: 'Bandcamp',
+        badge: 'bandcamp',
+      },
+      {
+        url: 'https://tidal.com/browse/track/117117525',
+        service: 'Tidal',
+        badge: 'tidal',
+      },
+      {
+        url: 'https://music.youtube.com/watch?v=Z-cinnTOwTY',
+        service: 'Youtube Music',
+        badge: 'youtube',
+      },
+      {
+        url: 'https://www.deezer.com/us/album/109896102',
+        service: 'Deezer',
+        badge: 'deezer',
+      },
+      {
+        url: 'https://www.amazon.com/Remembrance-Wallace-Sidhr%C3%A9e/dp/B07XF6SQ3C/',
+        service: 'Amazon',
+        badge: 'amazon',
+      },
+    ];
+  } else if (release === 'discovery') {
+    listenToDetails = [
+      {
+        url: 'https://music.apple.com/no/album/discovery-single/1484066259',
+        service: 'Apple Music',
+        badge: 'itunes',
+      },
+      {
+        url: 'https://play.google.com/music/preview/Bkoaxi2aybkt5z7zkivsmmludai',
+        service: 'Google Play Music',
+        badge: 'google-play-music',
+      },
+      {
+        url: 'https://open.spotify.com/track/2h3rBOiGpaCog96q1MnDvv',
+        service: 'Spotify',
+        badge: 'spotify',
+      },
+      {
+        url: 'https://sidhree.bandcamp.com/track/discovery',
+        service: 'Bandcamp',
+        badge: 'bandcamp',
+      },
+      {
+        url: 'https://tidal.com/browse/track/120527889',
+        service: 'Tidal',
+        badge: 'tidal',
+      },
+      {
+        url: 'https://music.youtube.com/watch?v=B0wFqOx-Zs8',
+        service: 'Youtube Music',
+        badge: 'youtube',
+      },
+      {
+        url: 'https://www.deezer.com/us/album/115457792',
+        service: 'Deezer',
+        badge: 'deezer',
+      },
+      {
+        url: 'https://www.amazon.com/Discovery-Wallace-Sidhr%C3%A9e/dp/B07Z9JJRF7/',
+        service: 'Amazon',
+        badge: 'amazon',
+      },
+    ];
+  } else if (release === 'resolution') {
+    listenToDetails = [
+      {
+        url: 'https://music.apple.com/no/album/resolution-single/1489483812',
+        service: 'Apple Music',
+        badge: 'itunes',
+      },
+      {
+        url: 'https://play.google.com/music/preview/Bhf7wrmoymolxchxmakgr2u526u',
+        service: 'Google Play Music',
+        badge: 'google-play-music',
+      },
+      {
+        url: 'https://open.spotify.com/track/1EWai0RFqbxiN9fEEOjTPz',
+        service: 'Spotify',
+        badge: 'spotify',
+      },
+      {
+        url: 'https://sidhree.bandcamp.com/track/resolution',
+        service: 'Bandcamp',
+        badge: 'bandcamp',
+      },
+      {
+        url: 'https://tidal.com/browse/track/123840236',
+        service: 'Tidal',
+        badge: 'tidal',
+      },
+      {
+        url: 'https://music.youtube.com/watch?v=yGq1DcqGLUo',
+        service: 'Youtube Music',
+        badge: 'youtube',
+      },
+      {
+        url: 'https://www.deezer.com/us/album/120807712',
+        service: 'Deezer',
+        badge: 'deezer',
+      },
+      {
+        url: 'https://www.amazon.com/Resolution-Wallace-Sidhr%C3%A9e/dp/B08232NT5F/',
+        service: 'Amazon',
+        badge: 'amazon',
+      },
+    ];
+  } else if (release === 'golden-days') {
+    listenToDetails = [
+      {
+        url: 'https://music.apple.com/no/album/golden-days-ep/1489691489',
+        service: 'Apple Music',
+        badge: 'itunes',
+      },
+      {
+        url: 'https://play.google.com/music/preview/B2s2sky4opwbmdpjw3yvcxikbfy',
+        service: 'Google Play Music',
+        badge: 'google-play-music',
+      },
+      {
+        url: 'https://open.spotify.com/album/7t0AGGzMjrgDpvgNQUYER4',
+        service: 'Spotify',
+        badge: 'spotify',
+      },
+      {
+        url: 'https://sidhree.bandcamp.com/album/golden-days',
+        service: 'Bandcamp',
+        badge: 'bandcamp',
+      },
+      {
+        url: 'https://tidal.com/browse/album/124016292',
+        service: 'Tidal',
+        badge: 'tidal',
+      },
+      {
+        url: 'https://music.youtube.com/playlist?list=OLAK5uy_nKK1WamMHIbwCr4Ir-aLOBYvJWxC6N6KM',
+        service: 'Youtube Music',
+        badge: 'youtube',
+      },
+      {
+        url: 'https://www.deezer.com/us/album/120988732',
+        service: 'Deezer',
+        badge: 'deezer',
+      },
+      {
+        url: 'https://www.amazon.com/Golden-Days-Wallace-Sidhr%C3%A9e/dp/B0824VRKZK/',
+        service: 'Amazon',
+        badge: 'amazon',
+      },
+    ];
+  } else if (release === 'organsm') {
+    listenToDetails = [
+      {
+        url: 'https://music.apple.com/no/album/organsm-single/1506627443',
+        service: 'Apple Music',
+        badge: 'itunes',
+      },
+      {
+        url: 'https://play.google.com/music/preview/B4f5arv4whdvgkm7fjv3o4u2dh4',
+        service: 'Google Play Music',
+        badge: 'google-play-music',
+      },
+      {
+        url: 'https://open.spotify.com/album/45B5EHRo8X7RYuRuWUge5z',
+        service: 'Spotify',
+        badge: 'spotify',
+      },
+      {
+        url: 'https://sidhree.bandcamp.com/album/organsm',
+        service: 'Bandcamp',
+        badge: 'bandcamp',
+      },
+      {
+        url: 'https://tidal.com/browse/album/136589334',
+        service: 'Tidal',
+        badge: 'tidal',
+      },
+      {
+        url: 'https://music.youtube.com/playlist?list=OLAK5uy_lkYVw-HXAZy3Qp05sc7Sjutgh4kYOxpvM',
+        service: 'Youtube Music',
+        badge: 'youtube',
+      },
+      {
+        url: 'https://www.deezer.com/us/album/140356412',
+        service: 'Deezer',
+        badge: 'deezer',
+      },
+      {
+        url: 'https://www.amazon.com/Organsm-Wallace-Sidhr%C3%A9e/dp/B086TWD8J5/',
+        service: 'Amazon',
+        badge: 'amazon',
+      },
+    ];
+  } else {
+    // Fallback to 'Futures Past'
+    listenToDetails = listenToBadges;
+  }
+  return listenToDetails;
 };

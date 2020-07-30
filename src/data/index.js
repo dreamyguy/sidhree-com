@@ -115,6 +115,11 @@ const soMeLinks = [
     badge: 'twitter',
   },
   {
+    url: 'https://music.youtube.com/channel/UCXHIASbur6B16Rd5X0JCtWg',
+    service: 'YouTube Music',
+    badge: 'youtube',
+  },
+  {
     url: 'https://www.amazon.com/s/ref=ntt_srch_drd_B06XXS8G9J?ie=UTF8&amp;field-keywords=Wallace%20Sidhrée&amp;index=digital-music',
     service: 'Amazon',
     badge: 'amazon',
@@ -130,7 +135,7 @@ const single = {
   byProduced: 'Wallace Sidhrée',
   contactEmail: 'w@sidhree.com',
   contactPhone: '+47 40481863',
-  image: "/static/img/music/release/Wallace-Sidhree---Futures Past---Progressive-Rock---640.jpg",
+  image: "/static/img/music/release/Wallace-Sidhree---Futures-Past---Progressive-Rock---640.jpg",
   isAlbum: false,
   isrc: 'NOW6M1777777',
   label: 'Mëllon Records',
@@ -144,12 +149,12 @@ const single = {
 
 const listenToBadges = [
   {
-    url: 'https://itun.es/no/Zn_Xib?i=1221063545',
-    service: 'Apple iTunes',
+    url: 'https://music.apple.com/no/album/futures-past-ep/1221063539',
+    service: 'Apple Music',
     badge: 'itunes',
   },
   {
-    url: 'https://play.google.com/music/m/Tkx3uymxh6p4x2ebtxua7zcjvma?t=Futures_Past_-_Wallace_Sidhree',
+    url: 'https://play.google.com/music/preview/Tkx3uymxh6p4x2ebtxua7zcjvma',
     service: 'Google Play Music',
     badge: 'google-play-music',
   },
@@ -317,7 +322,7 @@ const otherServices = [
     badge: 'yandex',
   },
   {
-    url: '',
+    url: 'https://music.youtube.com/channel/UCXHIASbur6B16Rd5X0JCtWg',
     service: 'YouTube',
     badge: 'youtube',
   },

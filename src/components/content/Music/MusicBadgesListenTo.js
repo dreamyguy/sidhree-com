@@ -3,6 +3,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { isNotEmptyArray } from '../../../utils/isEmptyUtil';
 import './MusicBadgesListenTo.scss';
 
+// TODO: Missing badges for:
+// 'youtube'
+// 'deezer'
+
 const renderBadges = ({ artistName, listenToBadges, singleName }) => {
   const output = [];
   if (listenToBadges && isNotEmptyArray(listenToBadges)) {

@@ -11,7 +11,7 @@ const renderSoMe = ({ artistName, soMeLinks }) => {
       output.push(
         <li key={uuidv4()}>
           <a href={b.url} title={`${artistName} on ${b.service}`} className="no-decor">
-            <i className={`icon icon-3x icon-fa-${b.badge}`} />
+            <i className={`icon ${b.badge === 'youtube' ? 'icon-svg ' : ''}icon-3x icon-fa-${b.badge}`} />
           </a>
         </li>
       )

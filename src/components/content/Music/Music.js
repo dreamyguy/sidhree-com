@@ -10,10 +10,9 @@ import MusicContact from "./MusicContact";
 import MusicSeparator from "./MusicSeparator";
 import MusicSingle from "./MusicSingle";
 import Section from "../../layout/Section/Section";
-import { getReleaseDetails, getSongPageDetails } from "../../../data/getData";
+import { getListenToDetails, getReleaseDetails, getSongPageDetails } from "../../../data/getData";
 import {
   article,
-  listenToBadges,
   musicPageDetails,
   otherServices,
   single,
@@ -42,7 +41,7 @@ const Music = ({ release, withBio }) => {
       <Section sectionClasses="spotify">
         <MusicBadgesListenTo
           artistName={mergedReleaseDetails.artistName}
-          listenToBadges={listenToBadges}
+          listenToBadges={getListenToDetails(release)}
           singleName={mergedReleaseDetails.songName}
         />
       </Section>
