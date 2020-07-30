@@ -180,6 +180,16 @@ const listenToBadges = [
   },
 ];
 
+
+const relatedArtists = [
+  'Premiata Forneria Marconi',
+  'Il Paese Dei Balocchi',
+  'Museo Rosenbach',
+  'Camel',
+  'Yes',
+  'Wobbler',
+];
+
 const otherServices = [
   {
     url: '',
@@ -344,6 +354,7 @@ const article = {
 export {
   article,
   listenToBadges,
+  relatedArtists,
   otherServices,
   devPageDetails,
   musicPageDetails,

@@ -198,6 +198,269 @@ export const getReleaseDetails = release => {
   return releaseDetails;
 };
 
+export const getReleaseRelatedArtists = release => {
+  let releaseRelatedArtists = '';
+  if (release === 'transformation') {
+    releaseRelatedArtists = [
+      {
+        artistName: 'Ludovico Einaudi',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Peter Sandberg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Yann Tiersen',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Luke Howard',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Karin Borg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Roberto Cacciapaglia',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Joep Beving',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Max Richter',
+        artistSpotifyUrl: '',
+      },
+    ];
+  } else if (release === 'homecoming') {
+    releaseRelatedArtists = [
+      {
+        artistName: 'Ludovico Einaudi',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Peter Sandberg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Yann Tiersen',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Luke Howard',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Karin Borg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Roberto Cacciapaglia',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Joep Beving',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Max Richter',
+        artistSpotifyUrl: '',
+      },
+    ];
+  } else if (release === 'remembrance') {
+    releaseRelatedArtists = [
+      {
+        artistName: 'Ludovico Einaudi',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Peter Sandberg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Yann Tiersen',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Luke Howard',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Karin Borg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Roberto Cacciapaglia',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Joep Beving',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Max Richter',
+        artistSpotifyUrl: '',
+      },
+    ];
+  } else if (release === 'discovery') {
+    releaseRelatedArtists = [
+      {
+        artistName: 'Ludovico Einaudi',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Peter Sandberg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Yann Tiersen',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Luke Howard',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Karin Borg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Roberto Cacciapaglia',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Joep Beving',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Max Richter',
+        artistSpotifyUrl: '',
+      },
+    ];
+  } else if (release === 'resolution') {
+    releaseRelatedArtists = [
+      {
+        artistName: 'Ludovico Einaudi',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Peter Sandberg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Yann Tiersen',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Luke Howard',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Karin Borg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Roberto Cacciapaglia',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Joep Beving',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Max Richter',
+        artistSpotifyUrl: '',
+      },
+    ];
+  } else if (release === 'golden-days') {
+    releaseRelatedArtists = [
+      {
+        artistName: 'Ludovico Einaudi',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Peter Sandberg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Yann Tiersen',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Luke Howard',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Karin Borg',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Roberto Cacciapaglia',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Joep Beving',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Max Richter',
+        artistSpotifyUrl: '',
+      },
+    ];
+  } else if (release === 'organsm') {
+    releaseRelatedArtists = [
+      {
+        artistName: 'Elephant9',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Krokofant',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Juno El Grande',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Niacin',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Billy Sheehan',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: `Bushman'S Revenge`,
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'JÜ',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Møster',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Grand General',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Hedvig Mollestad Trio',
+        artistSpotifyUrl: '',
+      },
+      {
+        artistName: 'Jaza Jazzist',
+        artistSpotifyUrl: '',
+      },
+    ];
+  }
+  return releaseRelatedArtists;
+};
+
 export const getListenToDetails = release => {
   let listenToDetails = [];
   if (release === 'transformation') {

@@ -7,10 +7,16 @@ import MusicBadgesListenMore from "./MusicBadgesListenMore";
 import MusicBadgesListenTo from "./MusicBadgesListenTo";
 import MusicBio from "./MusicBio";
 import MusicContact from "./MusicContact";
+import MusicRelatedArtists from "./MusicRelatedArtists";
 import MusicSeparator from "./MusicSeparator";
 import MusicSingle from "./MusicSingle";
 import Section from "../../layout/Section/Section";
-import { getListenToDetails, getReleaseDetails, getSongPageDetails } from "../../../data/getData";
+import {
+  getListenToDetails,
+  getReleaseRelatedArtists,
+  getReleaseDetails,
+  getSongPageDetails
+} from "../../../data/getData";
 import {
   article,
   musicPageDetails,
@@ -51,6 +57,12 @@ const Music = ({ release, withBio }) => {
           articleDate={article.articleDate}
           articleHeading={article.articleHeading}
           articleSubheading={article.articleSubheading}
+        />
+      </Section>
+      <Section sectionClasses="related-artists">
+        <MusicRelatedArtists
+          relatedArtists={getReleaseRelatedArtists(release)}
+          singleName={mergedReleaseDetails.songName}
         />
       </Section>
       <MusicSeparator />
