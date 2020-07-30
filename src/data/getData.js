@@ -7,7 +7,7 @@
 // Wallace-Sidhree---Golden-Days.jpg
 // Wallace-Sidhree---Organsm---Hard-Jazz.jpg
 
-import { listenToBadges } from './index';
+import { article, listenToBadges, relatedArtists } from './index';
 
 export const getSongPageDetails = release => {
   let songPageDetails = '';
@@ -204,259 +204,262 @@ export const getReleaseRelatedArtists = release => {
     releaseRelatedArtists = [
       {
         artistName: 'Ludovico Einaudi',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj',
       },
       {
         artistName: 'Peter Sandberg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3LtlJprzuq0Ii8p8YFZXai',
       },
       {
         artistName: 'Yann Tiersen',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/00sazWvoTLOqg5MFwC68Um',
       },
       {
         artistName: 'Luke Howard',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3duTXsC49HoPt4f4EySDKf',
       },
       {
         artistName: 'Karin Borg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0mWi0Jr9Ir8GPGVBpQqI1W',
       },
       {
         artistName: 'Roberto Cacciapaglia',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/359LKbZWLk6u3IpyNE2CQG',
       },
       {
         artistName: 'Joep Beving',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VKfXEWzhUi9siHBDTI02Y',
       },
       {
         artistName: 'Max Richter',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VZNmg4vCnew4Pavo8zDdW',
       },
     ];
   } else if (release === 'homecoming') {
     releaseRelatedArtists = [
       {
         artistName: 'Ludovico Einaudi',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj',
       },
       {
         artistName: 'Peter Sandberg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3LtlJprzuq0Ii8p8YFZXai',
       },
       {
         artistName: 'Yann Tiersen',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/00sazWvoTLOqg5MFwC68Um',
       },
       {
         artistName: 'Luke Howard',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3duTXsC49HoPt4f4EySDKf',
       },
       {
         artistName: 'Karin Borg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0mWi0Jr9Ir8GPGVBpQqI1W',
       },
       {
         artistName: 'Roberto Cacciapaglia',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/359LKbZWLk6u3IpyNE2CQG',
       },
       {
         artistName: 'Joep Beving',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VKfXEWzhUi9siHBDTI02Y',
       },
       {
         artistName: 'Max Richter',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VZNmg4vCnew4Pavo8zDdW',
       },
     ];
   } else if (release === 'remembrance') {
     releaseRelatedArtists = [
       {
         artistName: 'Ludovico Einaudi',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj',
       },
       {
         artistName: 'Peter Sandberg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3LtlJprzuq0Ii8p8YFZXai',
       },
       {
         artistName: 'Yann Tiersen',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/00sazWvoTLOqg5MFwC68Um',
       },
       {
         artistName: 'Luke Howard',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3duTXsC49HoPt4f4EySDKf',
       },
       {
         artistName: 'Karin Borg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0mWi0Jr9Ir8GPGVBpQqI1W',
       },
       {
         artistName: 'Roberto Cacciapaglia',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/359LKbZWLk6u3IpyNE2CQG',
       },
       {
         artistName: 'Joep Beving',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VKfXEWzhUi9siHBDTI02Y',
       },
       {
         artistName: 'Max Richter',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VZNmg4vCnew4Pavo8zDdW',
       },
     ];
   } else if (release === 'discovery') {
     releaseRelatedArtists = [
       {
         artistName: 'Ludovico Einaudi',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj',
       },
       {
         artistName: 'Peter Sandberg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3LtlJprzuq0Ii8p8YFZXai',
       },
       {
         artistName: 'Yann Tiersen',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/00sazWvoTLOqg5MFwC68Um',
       },
       {
         artistName: 'Luke Howard',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3duTXsC49HoPt4f4EySDKf',
       },
       {
         artistName: 'Karin Borg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0mWi0Jr9Ir8GPGVBpQqI1W',
       },
       {
         artistName: 'Roberto Cacciapaglia',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/359LKbZWLk6u3IpyNE2CQG',
       },
       {
         artistName: 'Joep Beving',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VKfXEWzhUi9siHBDTI02Y',
       },
       {
         artistName: 'Max Richter',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VZNmg4vCnew4Pavo8zDdW',
       },
     ];
   } else if (release === 'resolution') {
     releaseRelatedArtists = [
       {
         artistName: 'Ludovico Einaudi',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj',
       },
       {
         artistName: 'Peter Sandberg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3LtlJprzuq0Ii8p8YFZXai',
       },
       {
         artistName: 'Yann Tiersen',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/00sazWvoTLOqg5MFwC68Um',
       },
       {
         artistName: 'Luke Howard',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3duTXsC49HoPt4f4EySDKf',
       },
       {
         artistName: 'Karin Borg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0mWi0Jr9Ir8GPGVBpQqI1W',
       },
       {
         artistName: 'Roberto Cacciapaglia',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/359LKbZWLk6u3IpyNE2CQG',
       },
       {
         artistName: 'Joep Beving',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VKfXEWzhUi9siHBDTI02Y',
       },
       {
         artistName: 'Max Richter',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VZNmg4vCnew4Pavo8zDdW',
       },
     ];
   } else if (release === 'golden-days') {
     releaseRelatedArtists = [
       {
         artistName: 'Ludovico Einaudi',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj',
       },
       {
         artistName: 'Peter Sandberg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3LtlJprzuq0Ii8p8YFZXai',
       },
       {
         artistName: 'Yann Tiersen',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/00sazWvoTLOqg5MFwC68Um',
       },
       {
         artistName: 'Luke Howard',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3duTXsC49HoPt4f4EySDKf',
       },
       {
         artistName: 'Karin Borg',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0mWi0Jr9Ir8GPGVBpQqI1W',
       },
       {
         artistName: 'Roberto Cacciapaglia',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/359LKbZWLk6u3IpyNE2CQG',
       },
       {
         artistName: 'Joep Beving',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VKfXEWzhUi9siHBDTI02Y',
       },
       {
         artistName: 'Max Richter',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2VZNmg4vCnew4Pavo8zDdW',
       },
     ];
   } else if (release === 'organsm') {
     releaseRelatedArtists = [
       {
         artistName: 'Elephant9',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/7fX6TkG03KYZv7jAaZKC5v',
       },
       {
         artistName: 'Krokofant',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/23A1NMMpoNpJkSlq4GwJUy',
       },
       {
         artistName: 'Juno El Grande',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/5anYQcPEvvSc4zFfO2ZoOC',
       },
       {
         artistName: 'Niacin',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/7hQwy8CWLxLlh0pw2tO4YW',
       },
       {
         artistName: 'Billy Sheehan',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0GXvIHZC6fUFoclPbf7Lbm',
       },
       {
         artistName: `Bushman'S Revenge`,
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/23ElmuKLosPuHchIPXuq5G',
       },
       {
         artistName: 'JÜ',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/0hjeGYbdwj5BaxROxu1OxD',
       },
       {
         artistName: 'Møster',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/3zvJ3MlnXfDnmw4aIWtBZf',
       },
       {
         artistName: 'Grand General',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/2W0JpUXpt6nY3k1gblaUNc',
       },
       {
         artistName: 'Hedvig Mollestad Trio',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/33Ynrn4NZsANMBJsFFqB7Y',
       },
       {
         artistName: 'Jaza Jazzist',
-        artistSpotifyUrl: '',
+        artistSpotifyUrl: 'https://open.spotify.com/artist/68HFSFMCZzyRjkkm9bv5Vt',
       },
     ];
+  } else {
+    // Fallback to 'Futures Past'
+    releaseRelatedArtists = relatedArtists;
   }
   return releaseRelatedArtists;
 };
@@ -769,4 +772,84 @@ export const getListenToDetails = release => {
     listenToDetails = listenToBadges;
   }
   return listenToDetails;
+};
+
+
+export const getArticleDetails = release => {
+  let articleDetails = {};
+  if (release === 'transformation') {
+    articleDetails = {
+      articleDate: '',
+      articleHeading: ``,
+      articleSubheading: '',
+      articleBody: `
+        <p class="gutter-bottom"></p>
+        <p class="open-sans-light-italic">— Wallace Sidhrée</p>
+      `
+    };
+  } else if (release === 'homecoming') {
+    articleDetails = {
+      articleDate: '',
+      articleHeading: ``,
+      articleSubheading: '',
+      articleBody: `
+        <p class="gutter-bottom"></p>
+        <p class="open-sans-light-italic">— Wallace Sidhrée</p>
+      `
+    };
+  } else if (release === 'remembrance') {
+    articleDetails = {
+      articleDate: '',
+      articleHeading: ``,
+      articleSubheading: '',
+      articleBody: `
+        <p class="gutter-bottom"></p>
+        <p class="open-sans-light-italic">— Wallace Sidhrée</p>
+      `
+    };
+  } else if (release === 'discovery') {
+    articleDetails = {
+      articleDate: '',
+      articleHeading: ``,
+      articleSubheading: '',
+      articleBody: `
+        <p class="gutter-bottom"></p>
+        <p class="open-sans-light-italic">— Wallace Sidhrée</p>
+      `
+    };
+  } else if (release === 'resolution') {
+    articleDetails = {
+      articleDate: '',
+      articleHeading: ``,
+      articleSubheading: '',
+      articleBody: `
+        <p class="gutter-bottom"></p>
+        <p class="open-sans-light-italic">— Wallace Sidhrée</p>
+      `
+    };
+  } else if (release === 'golden-days') {
+    articleDetails = {
+      articleDate: '',
+      articleHeading: ``,
+      articleSubheading: '',
+      articleBody: `
+        <p class="gutter-bottom"></p>
+        <p class="open-sans-light-italic">— Wallace Sidhrée</p>
+      `
+    };
+  } else if (release === 'organsm') {
+    articleDetails = {
+      articleDate: '',
+      articleHeading: ``,
+      articleSubheading: '',
+      articleBody: `
+        <p class="gutter-bottom"></p>
+        <p class="open-sans-light-italic">— Wallace Sidhrée</p>
+      `
+    };
+  } else {
+    // Fallback to 'Futures Past'
+    articleDetails = article;
+  }
+  return articleDetails;
 };

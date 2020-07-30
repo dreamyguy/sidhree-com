@@ -182,12 +182,34 @@ const listenToBadges = [
 
 
 const relatedArtists = [
-  'Premiata Forneria Marconi',
-  'Il Paese Dei Balocchi',
-  'Museo Rosenbach',
-  'Camel',
-  'Yes',
-  'Wobbler',
+  {
+    artistName: 'Premiata Forneria Marconi',
+    artistSpotifyUrl: 'https://open.spotify.com/artist/1MD5pgVzlusqGyuSTcTxvu',
+  },
+  {
+    artistName: 'Il Paese Dei Balocchi',
+    artistSpotifyUrl: 'https://open.spotify.com/artist/1aJ9HM9SusVxdpABwMj5uz',
+  },
+  {
+    artistName: 'Museo Rosenbach',
+    artistSpotifyUrl: 'https://open.spotify.com/artist/4RWamjGtVScGN2kfuoOm7V',
+  },
+  {
+    artistName: 'Camel',
+    artistSpotifyUrl: 'https://open.spotify.com/artist/3Uz6jx81OY2J5K8Z4wmy2P',
+  },
+  {
+    artistName: 'Yes',
+    artistSpotifyUrl: 'https://open.spotify.com/artist/7AC976RDJzL2asmZuz7qil',
+  },
+  {
+    artistName: 'Änglagård',
+    artistSpotifyUrl: 'https://open.spotify.com/artist/2z3Eoj9BvslBDrmygKjr2B',
+  },
+  {
+    artistName: 'Wobbler',
+    artistSpotifyUrl: 'https://open.spotify.com/artist/00Uv0804nrBM2RxUBTkyHj',
+  },
 ];
 
 const otherServices = [

@@ -12,10 +12,11 @@ import MusicSeparator from "./MusicSeparator";
 import MusicSingle from "./MusicSingle";
 import Section from "../../layout/Section/Section";
 import {
+  getArticleDetails,
   getListenToDetails,
   getReleaseRelatedArtists,
   getReleaseDetails,
-  getSongPageDetails
+  getSongPageDetails,
 } from "../../../data/getData";
 import {
   article,
@@ -53,10 +54,7 @@ const Music = ({ release, withBio }) => {
       </Section>
       <Section sectionClasses="article">
         <MusicArticle
-          articleBody={article.articleBody}
-          articleDate={article.articleDate}
-          articleHeading={article.articleHeading}
-          articleSubheading={article.articleSubheading}
+          article={getArticleDetails(release)}
         />
       </Section>
       <Section sectionClasses="related-artists">
