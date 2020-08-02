@@ -51,6 +51,37 @@
     $sprite-badge_tidal: -(296px + 2), -(176px + 2), (114px - 4), (44px - 4);
     @include sprite($sprite-badge_tidal);
   }
+  &.sprite-badge_apple-music,
+  &.sprite-badge_deezer,
+  &.sprite-badge_youtube-music {
+    display: block;
+    width: 110px;
+    height: 40px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-size: cover;
+    }
+  }
+  &.sprite-badge_apple-music {
+    background-image: url('../img/sprites/badge_apple-music.png');
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: url('../img/sprites/badge_apple-music.png');
+    }
+  }
+  &.sprite-badge_deezer {
+    background-image: url('../img/sprites/badge_deezer.png');
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: url('../img/sprites/badge_deezer.png');
+    }
+  }
+  &.sprite-badge_youtube-music {
+    background-image: url('../img/sprites/badge_youtube-music.png');
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: url('../img/sprites/badge_youtube-music.png');
+    }
+  }
   &.sprite-music-service_247 {
     $sprite-music-service_247: -(415px + 2), -(176px + 2), (72px - 4), (44px - 4);
     @include sprite($sprite-music-service_247);

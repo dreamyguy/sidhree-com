@@ -19,7 +19,6 @@ import {
   getSongPageDetails,
 } from "../../../data/getData";
 import {
-  article,
   musicPageDetails,
   otherServices,
   single,

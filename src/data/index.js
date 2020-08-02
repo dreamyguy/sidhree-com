@@ -115,7 +115,8 @@ const soMeLinks = [
     badge: 'twitter',
   },
   {
-    url: 'https://music.youtube.com/channel/UCXHIASbur6B16Rd5X0JCtWg',
+    // url: 'https://music.youtube.com/channel/UCXHIASbur6B16Rd5X0JCtWg',
+    url: 'https://www.youtube.com/c/sidhree',
     service: 'YouTube Music',
     badge: 'youtube',
   },
@@ -151,7 +152,7 @@ const listenToBadges = [
   {
     url: 'https://music.apple.com/no/album/futures-past-ep/1221063539',
     service: 'Apple Music',
-    badge: 'itunes',
+    badge: 'apple-music',
   },
   {
     url: 'https://play.google.com/music/preview/Tkx3uymxh6p4x2ebtxua7zcjvma',
@@ -172,6 +173,16 @@ const listenToBadges = [
     url: 'https://tidal.com/track/72191707',
     service: 'Tidal',
     badge: 'tidal',
+  },
+  {
+    url: 'https://music.youtube.com/watch?v=GsSzZcTpJ00',
+    service: 'Youtube Music',
+    badge: 'youtube-music',
+  },
+  {
+    url: 'https://www.deezer.com/us/album/15810634',
+    service: 'Deezer',
+    badge: 'deezer',
   },
   {
     url: 'https://www.amazon.com/Futures-Past-Wallace-Sidhr%C3%A9e/dp/B06XXS9635/',
@@ -354,7 +365,7 @@ const otherServices = [
     badge: 'yandex',
   },
   {
-    url: 'https://music.youtube.com/channel/UCXHIASbur6B16Rd5X0JCtWg',
+    url: 'https://www.youtube.com/c/sidhree',
     service: 'YouTube',
     badge: 'youtube',
   },
