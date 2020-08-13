@@ -41,7 +41,8 @@ You're free to use it AS IS as long as you stick to the [MIT license](LICENSE). 
 
 ## Release History
 
-- 2019-12-15   [v1.0.0](https://github.com/dreamyguy/sidhree-com/tree/v1-0-0) Total re-write to React.
+- 2020-08-13   [v2.0.0](https://github.com/dreamyguy/sidhree-com/tree/v2.0.0) All current music pages are up, 'sidhree.com' is now served as a GitHub Page (with proper routing) & through HTTPS.
+- 2019-12-15   [v1.0.0](https://github.com/dreamyguy/sidhree-com/tree/v1.0.0) Total re-write to React.
 - 2016-05-31   [v0.0.7](https://github.com/dreamyguy/sidhree-com/tree/v0.0.7) Maintenance updates.
 - 2016-04-06   [v0.0.6](https://github.com/dreamyguy/sidhree-com/tree/v0.0.6) Corrected indentation on layout so that the HTML tag wraps correctly.
 - 2016-02-23   [v0.0.5](https://github.com/dreamyguy/sidhree-com/tree/v0.0.5) Introduced 'Git Stats' section. Avoid 'about' image being blocked by adBlockers.
