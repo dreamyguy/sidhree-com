@@ -57,4 +57,4 @@ You're free to use it AS IS as long as you stick to the [MIT license](LICENSE). 
 
 **sidhree-com** was put together by [Wallace Sidhrée][1]. 👨‍💻🇳🇴
 
-[1]: http://sidhree.com/
+[1]: https://sidhree.com/

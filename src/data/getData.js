@@ -13,7 +13,7 @@ export const getSongPageDetails = release => {
   let songPageDetails = '';
   if (release === 'transformation') {
     songPageDetails = {
-      homeUrl: "http://sidhree.com/piano-solo/transformation",
+      homeUrl: "https://sidhree.com/piano-solo/transformation",
       articleTitle: "Transformation, a piano-solo by Wallace Sidhrée",
       description: "",
       image: "/static/img/music/release/Wallace-Sidhree---Transformation---Piano-Solo---1200.jpg",
@@ -23,7 +23,7 @@ export const getSongPageDetails = release => {
     };
   } else if (release === 'homecoming') {
     songPageDetails = {
-      homeUrl: "http://sidhree.com/piano-solo/homecoming",
+      homeUrl: "https://sidhree.com/piano-solo/homecoming",
       articleTitle: "Homecoming, a piano-solo by Wallace Sidhrée",
       description: "",
       image: "/static/img/music/release/Wallace-Sidhree---Homecoming---Piano-Solo---1200.jpg",
@@ -33,7 +33,7 @@ export const getSongPageDetails = release => {
     };
   } else if (release === 'remembrance') {
     songPageDetails = {
-      homeUrl: "http://sidhree.com/piano-solo/remembrance",
+      homeUrl: "https://sidhree.com/piano-solo/remembrance",
       articleTitle: "Remembrance, a piano-solo by Wallace Sidhrée",
       description: "",
       image: "/static/img/music/release/Wallace-Sidhree---Remembrance---Piano-Solo---1200.jpg",
@@ -43,7 +43,7 @@ export const getSongPageDetails = release => {
     };
   } else if (release === 'discovery') {
     songPageDetails = {
-      homeUrl: "http://sidhree.com/piano-solo/discovery",
+      homeUrl: "https://sidhree.com/piano-solo/discovery",
       articleTitle: "Discovery, a piano-solo by Wallace Sidhrée",
       description: "",
       image: "/static/img/music/release/Wallace-Sidhree---Discovery---Piano-Solo---1200.jpg",
@@ -53,7 +53,7 @@ export const getSongPageDetails = release => {
     };
   } else if (release === 'resolution') {
     songPageDetails = {
-      homeUrl: "http://sidhree.com/piano-solo/resolution",
+      homeUrl: "https://sidhree.com/piano-solo/resolution",
       articleTitle: "Resolution, a piano-solo by Wallace Sidhrée",
       description: "",
       image: "/static/img/music/release/Wallace-Sidhree---Resolution---Piano-Solo---1200.jpg",
@@ -63,7 +63,7 @@ export const getSongPageDetails = release => {
     };
   } else if (release === 'golden-days') {
     songPageDetails = {
-      homeUrl: "http://sidhree.com/piano-solo/golden-days",
+      homeUrl: "https://sidhree.com/piano-solo/golden-days",
       articleTitle: "Golden Days, a piano-solo EP by Wallace Sidhrée",
       description: "",
       image: "/static/img/music/release/Wallace-Sidhree---Golden-Days---1200.jpg",
@@ -73,7 +73,7 @@ export const getSongPageDetails = release => {
     };
   } else if (release === 'organsm') {
     songPageDetails = {
-      homeUrl: "http://sidhree.com/hard-jazz/organsm",
+      homeUrl: "https://sidhree.com/hard-jazz/organsm",
       articleTitle: "Organsm",
       description: "",
       image: "/static/img/music/release/Wallace-Sidhree---Organsm---Hard-Jazz---1200.jpg",

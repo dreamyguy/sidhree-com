@@ -1,7 +1,7 @@
 const devPageDetails = {
   name: "Wallace Sidhrée",
   role: "Senior Frontend Developer",
-  homeUrl: "http://sidhree.com/",
+  homeUrl: "https://sidhree.com/",
   locale: "en_US",
   localeSite: "en",
   id: "dreamyguy",
@@ -50,7 +50,7 @@ const devPageDetails = {
 const musicDefaultPageDetails = {
   name: "Wallace Sidhrée",
   role: "Progressive Rock Artist",
-  homeUrl: "http://sidhree.com/progressive-rock/futures-past/",
+  homeUrl: "https://sidhree.com/progressive-rock/futures-past/",
   id: "sidhree",
   articleTitle: "Wallace Sidhrée to release his debut into the Progressive Rock scene, with the single 'Futures Past'",
   description: "Wallace Sidhrée is a Progressive Rock artist. With his haunting B3 and bass tones alongside loaded guitar solos, Wallace invites us to reflect upon futures that passed us by.",
