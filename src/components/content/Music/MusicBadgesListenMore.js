@@ -29,7 +29,7 @@ const MusicBadgesListenMore = ({ artistName, otherServices, singleName }) => {
   return (
     <div className="row">
       <div className="small-12 columns fg-sb-graylighter">
-        <h2 id="other-providers" className="heading-two open-sans-light gutter-bottom">'{singleName}' also available on:</h2>
+        <h2 id="other-providers" className="heading-two open-sans-light gutter-bottom">Listen to {artistName} on these services as well:</h2>
         <ul className="music-icons list-inline-block align-center gutter-top">
           {renderOtherServices({ artistName, otherServices })}
         </ul>
