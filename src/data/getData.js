@@ -496,7 +496,7 @@ export const getListenToDetails = release => {
       {
         url: 'https://music.youtube.com/watch?v=tH-h5FWJ9sA',
         service: 'Youtube Music',
-        badge: 'youtube',
+        badge: 'youtube-music',
       },
       {
         url: 'https://www.deezer.com/us/album/105891422',
@@ -539,7 +539,7 @@ export const getListenToDetails = release => {
       {
         url: 'https://music.youtube.com/watch?v=y1rSLsPysQw',
         service: 'Youtube Music',
-        badge: 'youtube',
+        badge: 'youtube-music',
       },
       {
         url: 'https://www.deezer.com/us/album/108445422',
@@ -582,7 +582,7 @@ export const getListenToDetails = release => {
       {
         url: 'https://music.youtube.com/watch?v=Z-cinnTOwTY',
         service: 'Youtube Music',
-        badge: 'youtube',
+        badge: 'youtube-music',
       },
       {
         url: 'https://www.deezer.com/us/album/109896102',
@@ -625,7 +625,7 @@ export const getListenToDetails = release => {
       {
         url: 'https://music.youtube.com/watch?v=B0wFqOx-Zs8',
         service: 'Youtube Music',
-        badge: 'youtube',
+        badge: 'youtube-music',
       },
       {
         url: 'https://www.deezer.com/us/album/115457792',
@@ -668,7 +668,7 @@ export const getListenToDetails = release => {
       {
         url: 'https://music.youtube.com/watch?v=yGq1DcqGLUo',
         service: 'Youtube Music',
-        badge: 'youtube',
+        badge: 'youtube-music',
       },
       {
         url: 'https://www.deezer.com/us/album/120807712',
@@ -711,7 +711,7 @@ export const getListenToDetails = release => {
       {
         url: 'https://music.youtube.com/playlist?list=OLAK5uy_nKK1WamMHIbwCr4Ir-aLOBYvJWxC6N6KM',
         service: 'Youtube Music',
-        badge: 'youtube',
+        badge: 'youtube-music',
       },
       {
         url: 'https://www.deezer.com/us/album/120988732',
@@ -754,7 +754,7 @@ export const getListenToDetails = release => {
       {
         url: 'https://music.youtube.com/playlist?list=OLAK5uy_lkYVw-HXAZy3Qp05sc7Sjutgh4kYOxpvM',
         service: 'Youtube Music',
-        badge: 'youtube',
+        badge: 'youtube-music',
       },
       {
         url: 'https://www.deezer.com/us/album/140356412',
